@@ -1,0 +1,351 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/* 
+.bannerimg {
+    height: 500px;
+    object-fit: cover;
+} */
+
+.bannersec {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.abouheadsec {
+    /* position: absolute; */
+
+    text-align: center;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+}
+
+
+.bannertext {
+    width: 100% !important;
+    margin-bottom: 0px;
+}
+
+.abouheadsec{
+    position: absolute;
+}
+/* .bannersec {
+    background:url("../imgs/abbg.webp") no-repeat;
+    height: 100%;
+    background-size:  contain cover;
+    padding: 100px 0px 80px 0px;
+   
+} */
+
+.bannersec {
+    background:none;
+    height: 100%;
+    background-color: #000;
+    padding: 0px;
+   align-items: center;
+   justify-content: center;
+   display: flex;
+}
+
+
+
+
+.mainsec,
+.offersec {
+    margin-top: 70px;
+}
+
+.detaisec {
+    margin-top: 40px;
+}
+
+
+
+.abhead {
+    max-width: 100%;
+
+    margin-bottom: 30px;
+}
+
+
+
+.abtext {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contcall {
+    max-width: 30px;
+    max-height: 30px;
+    margin-right: 10px;
+}
+
+.conttext1 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.colsec {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    /* text-align: left; */
+}
+
+
+.mapsec iframe {
+    height: 500px;
+    z-index: -99999;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.formsec {
+    position: relative;
+    width: 70%;
+    margin: auto;
+    padding: 50px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 30px;
+    margin-top: -200px;
+    z-index: 999;
+    background-color: #fff;
+}
+
+
+.form__group {
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.form__input {
+    position: realtive;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #CCCCCC;
+    border-radius: 0px;
+    outline: none;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background: transparent;
+}
+
+.form__input:focus {
+    border: 2px solid #B53C3A;
+
+}
+
+.form__label {
+    position: absolute;
+    top: 9px;
+    left: 15px;
+    transition: all 300ms ease-in-out;
+    pointer-events: none;
+}
+
+.form__input:focus~label,
+.form__input:not(:placeholder-shown)~label {
+    color: #B53C3A;
+    font-weight: 900;
+    top: -22px;
+    left: 0;
+    font-size: 14px;
+    z-index: 1;
+}
+
+/* .form__input:focus~.f-call{
+    top: -22px;
+}
+.form__input:not(:placeholder-shown)~.f-call{
+    top: -22px;
+} */
+.form__input::-webkit-input-placeholder {
+    color: transparent;
+}
+
+.form__input::-moz-placeholder {
+    color: transparent;
+}
+
+.form__input {
+    position: relative;
+    padding-right: 30px;
+}
+
+.f-call {
+    position: absolute;
+    right: 10px;
+    top: 13px;
+    max-width: 20px;
+}
+
+.form__input1 {
+    height: 200px;
+}
+
+.btnsec {
+    background-color: #B53C3A;
+    color: #fff;
+    font-weight: 500;
+    padding: 5px 10px;
+}
+
+.btnsec:hover {
+    transform: scale(1.08);
+    transition: 1s;
+    /*border-radius: 30px;*/
+    font-weight: bold;
+    background-color: #FBE6A9;
+}
+
+
+@media screen and (max-width:1299px) and (min-width:1200px) {
+    .contnumsec {
+        width: 320px;
+    }
+}
+
+@media screen and (max-width:1199px) and (min-width:993px) {
+    .containersec {
+        display: grid;
+        grid-template-columns: auto auto auto;
+
+
+    }
+
+    .abhead {
+        max-width: 60%;
+    }
+
+    .contnumsec {
+        width: 320px;
+    }
+
+    .formsec {
+
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:993px) and (min-width:768px) {
+    .containersec {
+        display: grid;
+        grid-template-columns: auto auto;
+
+    }
+
+    .abhead {
+        max-width: 70%;
+    }
+
+   
+
+    .abouheadsec {
+        /* position: absolute; */
+        margin-top: 0px;
+
+
+    }
+
+
+
+    .formsec {
+
+        width: 90%;
+    }
+}
+
+
+@media screen and (max-width:767px) and (min-width:600px) {
+    .containersec {
+        display: grid;
+        grid-template-columns: auto auto;
+
+    }
+
+    .abhead {
+        max-width: 100%;
+    }
+
+
+
+    .abouheadsec {
+        /* position: absolute; */
+        margin-top: 0px;
+
+
+    }
+
+  
+
+    .formsec {
+
+        width: 90%;
+    }
+}
+
+
+@media screen and (max-width:599px) {
+    .containersec {
+        display: grid;
+        grid-template-columns: auto;
+
+    }
+
+    .boxsec {
+        height: 230px;
+    }
+
+    .abhead {
+        max-width: 100%;
+    }
+
+
+    .abouheadsec {
+        /* position: absolute; */
+        margin-top: 0px;
+
+
+    }
+
+ 
+
+    .formsec {
+
+        width: 90%;
+    }
+
+    .form__input1 {
+        height: 150px;
+    }
+    
+
+    .f-call {
+        position: absolute;
+        right: 10px;
+        top: 15px;
+        max-width: 15px;
+    }
+    
+}
+
+@media screen and (max-width:767px) {
+    .flexsec-1 {
+        flex-direction: column;
+        align-items: start;
+    }
+
+
+}
