@@ -216,10 +216,6 @@ color:#000 !important;
 }
 
 
-.boxbtn1{
-    margin: 0px 10px;
-}
-
 .content {
     display: none;
     width: 100%;
@@ -234,8 +230,8 @@ color:#000 !important;
 .buttons {
 
     margin-bottom: 10px;
-    align-items: start;
-    justify-content: left;
+    align-items: end;
+    justify-content: right;
     display: grid;
     grid-template-columns: auto auto auto auto;
 }
@@ -256,11 +252,11 @@ color:#000 !important;
 }
 
 #dropdowns {
-    align-items: left;
-    justify-content: left;
+    align-items: right;
+    justify-content: right;
     display: flex;
     margin-top: -45px;
-    margin-left: 300px;
+    margin-right: 300px;
 
 }
 
@@ -680,18 +676,9 @@ color:#000 !important;
         margin-bottom: 20px;
     }
 
- 
-
-.buttons .btn {
-margin-left:10px;
-    margin-right: 0px;
-    /* background: lightgray; */
-
-}
-    
     #dropdowns {
         align-items: start;
-        justify-content: right;
+        justify-content: center;
         display: flex;
         margin-top: 0px;
         margin-right: 0px;
@@ -707,9 +694,8 @@ margin-left:10px;
 
     .buttons {
         align-items: center;
-        justify-content: right;
+        justify-content: center;
         margin-bottom: 30px;
-        
     }
 
     #loc-0-2 .boxtextsec .boctext-1,#loc-1-5 .boxtextsec .boctext-1{
@@ -717,40 +703,12 @@ margin-left:10px;
     }
 
 
-    
-        .tag-popup {
-            position: absolute;
-            top: -45px;
-            right: 10px;
-            background-color: #FBE6A9;
-            color: #000;
-            padding: 8px 12px;
-            border-radius: 20px;
-            font-size: 14px;
-            white-space: nowrap;
-            animation: slideDown 0.5s ease;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            display: none;
-            width: 280px !important;
-        }
-
-        .tag-popup::after {
-            content: "";
-            position: absolute;
-            top: 100%;
-            left: 250px;
-            border-width: 6px;
-            border-style: solid;
-            border-color: #FBE6A9 transparent transparent transparent;
-        }
-
-
 }
 
 @media screen and (max-width:400px) {
     .buttons {
         grid-template-columns: auto auto auto;
-        justify-content: right;
+        justify-content: center;
         margin-bottom: 20px;
     }
 
@@ -758,9 +716,7 @@ margin-left:10px;
         margin-bottom: 20px;
     }
 
-    .tag-popup{
-        font-size: 12px !important;
+    #dropdowns {
+        justify-content: center;
     }
-
-  
 }

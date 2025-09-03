@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -30,17 +30,19 @@
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intro.js/minified/introjs.min.css">
+<!-- CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intro.js/minified/introjs.min.css">
 
 
 
-    <style>
-        .dropdown select {
+        <style>
+          
+     
+
+            .dropdown select{
             width: 160px !important;
-        }
-
-        .popup {
+            }
+              .popup {
             display: none;
             position: fixed;
             top: 0;
@@ -52,7 +54,6 @@
             align-items: center;
             z-index: 999999;
         }
-
         .popup-content {
             position: relative;
             background: white;
@@ -60,7 +61,6 @@
             border-radius: 5px;
             text-align: center;
         }
-
         .close-btn {
             position: absolute;
             top: -10px;
@@ -76,26 +76,21 @@
             display: flex;
             border-radius: 50%;
         }
-
         .slider-container {
             position: relative;
             display: flex;
             align-items: center;
             justify-content: center;
         }
-
         .slider img {
-            width: 400px;
+            width: 400px ;
             display: none;
             border-radius: 5px;
         }
-
         .slider img.active {
             display: block;
         }
-
-        .prev,
-        .next {
+        .prev, .next {
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
@@ -115,15 +110,8 @@
             display: flex;
 
         }
-
-        .prev {
-            left: 10px;
-        }
-
-        .next {
-            right: 10px;
-        }
-
+        .prev { left: 10px; }
+        .next { right: 10px; }
         .dots {
             display: flex;
             justify-content: center;
@@ -131,7 +119,6 @@
             position: absolute;
             bottom: 10px;
         }
-
         .dot {
             width: 10px;
             height: 10px;
@@ -145,100 +132,92 @@
             right: auto;
             z-index: 999; */
         }
-
         .dot.active {
             background: #fff;
         }
-
         .img1-1 {
             padding: 10px;
             /*border-radius: 20px;*/
             /*background-color:#000;*/
             box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
         }
-
         .contents {
-            display: none;
-            margin: 50px auto;
-            width: 100%;
+    display: none;
+    margin: 50px auto;
+    width: 100%;
 
-        }
+}
 
-        .boximg:hover {
-            cursor: pointer;
-            transform: scale(1.01);
-            transition: 1s;
-            /* z-index: -1; */
-        }
+.boximg:hover{
+cursor: pointer;
+transform: scale(1.01);
+transition: 1s;
+/* z-index: -1; */
+}
 
 
 
-        .tag-popup {
-            position: absolute;
-            top: -45px;
-            left: 10px;
-            background-color: #FBE6A9;
-            color: #000;
-            padding: 8px 12px;
-            border-radius: 20px;
-            font-size: 14px;
-            white-space: nowrap;
-            animation: slideDown 0.5s ease;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            display: none;
-        }
+.tag-popup {
+      position: absolute;
+      top: -45px;
+      left: 10px;
+      background-color: #FBE6A9;
+      color: #000;
+      padding: 8px 12px;
+      border-radius: 20px;
+      font-size: 14px;
+      white-space: nowrap;
+      animation: slideDown 0.5s ease;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      display: none;
+    }
 
-        .tag-popup::after {
-            content: "";
-            position: absolute;
-            top: 100%;
-            left: 20px;
-            border-width: 6px;
-            border-style: solid;
-            border-color: #FBE6A9 transparent transparent transparent;
-        }
+    .tag-popup::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 20px;
+      border-width: 6px;
+      border-style: solid;
+      border-color: #FBE6A9 transparent transparent transparent;
+    }
 
-        @keyframes slideDown {
-            from {
-                opacity: 0;
-                transform: translateY(-10px);
-            }
+    @keyframes slideDown {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
 
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-    </style>
+
+        </style>
 </head>
 
 <body>
 
     <div class="floatingesec">
         <div class="floatcont">
-            <a href="tel:+96824504938">
-                <button class="btn-floating phone">
-                    <i class="fa-solid fa-phone"></i>
-                    <span>+96824504938</span>
-                </button>
-            </a>
-
-            <a href="https://api.whatsapp.com/send?phone=+96898081925&text=Welcome to Dar Al Safwa Real Estate & Investment Services LLC   
+         <a href="tel:+96824504938">
+             <button class="btn-floating phone">
+                 <i class="fa-solid fa-phone"></i>
+               <span>+96824504938</span>
+             </button>
+           </a>
+           
+           <a  href="https://api.whatsapp.com/send?phone=+96898081925&text=Welcome to Dar Al Safwa Real Estate & Investment Services LLC   
            How can we assist you" target="_blank">
-                <button class="btn-floating whatsapp">
-                    <i class="fa-brands fa-whatsapp"></i>
-                    <span>+96898081925</span>
-                </button>
-            </a>
-
-            <a href="mailto:daralsafwa@alhosnigroup.com" target="_blank">
-                <button class="btn-floating whatsapp1">
-                    <i class="fa-solid fa-envelope"></i>
-                    <span> daralsafwa@alhosnigroup.com</span>
-                </button>
-            </a>
+             <button class="btn-floating whatsapp">
+                 <i class="fa-brands fa-whatsapp"></i>
+               <span>+96898081925</span>
+             </button>
+           </a>
+           
+           <a href="mailto:daralsafwa@alhosnigroup.com" target="_blank">
+             <button class="btn-floating whatsapp1">
+                 <i class="fa-solid fa-envelope"></i>
+               <span> daralsafwa@alhosnigroup.com</span>
+             </button>
+           </a>
         </div>
-    </div>
+     </div>
     <div class="main">
         <header id="header" class="fixed-top">
             <nav class="navbar navbar-expand-lg ">
@@ -251,37 +230,29 @@
                         aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <div class="navbar-nav me-auto mb-2 mb-lg-0"></div>
-                        <ul class="navbar-nav navsec mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="../">
-                                    الصفحة الرئيسية
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="../about-us/">
-                                    من نحن
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="../search-properties/">
-                                    إبحث عن وحدتك العقارية
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="../contact-us/">
+                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="navbar-nav me-auto mb-2 mb-lg-0"></div>
+                    <ul class="navbar-nav navsec mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../about-us/">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link active" aria-current="page" href="../search-properties/">Search Properties</a>
+                        </li>
+                         <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../contact-us/">Contact Us</a>
+                        </li>
+                    </ul>
+                    <!--<form class="d-flex">-->
 
-                                    التواصل معنا
-                                </a>
-                            </li>
-                        </ul>
-                        <!--<form class="d-flex">-->
-                        <!--     <a href="../contact-us/">-->
-                        <!--             <button class="btn contbtn"></button>-->
-                        <!--        </a>-->
-                        <!--</form>-->
-                    </div>
+                    <!--     <a href="../contact-us/">-->
+                    <!--             <button class="btn contbtn">Contact Us</button>-->
+                    <!--        </a>-->
+                    <!--</form>-->
+                </div>
                 </div>
             </nav>
         </header>
@@ -294,13 +265,13 @@
                     <div class="abouheadsec">
 
                         <h1 class="abouthead bannertext">
-                            احصل على عقارك المفضل
+                            Find Your Perfect Property
                         </h1>
-
-
+    
+    
                     </div>
                 </div>
-
+                
             </div>
 
 
@@ -311,103 +282,64 @@
 
                 </style>
 
-                <div class="prosec" data-aos="fade-up" data-aos-delay="50" data-aos-offset="0" data-aos-duration="1000"
-                    data-aos-easing="linear" data-aos-once="false">
+                <div class="prosec" data-aos="fade-up" data-aos-delay="50" data-aos-offset="0"
+                data-aos-duration="1000" data-aos-easing="linear" data-aos-once="false">
 
 
-                    <h1 class="mainhead prophead " data-aos="fade-up" data-aos-delay="50" data-aos-offset="0"
-                        data-aos-duration="1000" data-aos-easing="linear" data-aos-once="false">
+                    <h1 class="mainhead prophead "  data-aos="fade-up" data-aos-delay="50" data-aos-offset="0"
+                    data-aos-duration="1000" data-aos-easing="linear" data-aos-once="false" >
                         <strong>
-                            الوحدات العقارية
+                            PROPERTIES
                         </strong>
                     </h1>
                     <div class="buttons" onclick="closes1()" data-aos="fade-up" data-aos-delay="50" data-aos-offset="0"
-                        data-aos-duration="1000" data-aos-easing="linear" data-aos-once="false">
-                        <button class="btn active" onclick="showButtonContent(0)" id="menu1">
-                            شقق سكنية
-                        </button>
-                        <button class="btn" onclick="showButtonContent(1)" id="menu2">
-                            فلل
-                        </button>
-                        <button class="btn" onclick="showButtonContent(2)" id="menu3">
-                            محلات تجارية
-                        </button>
+                    data-aos-duration="1000" data-aos-easing="linear" data-aos-once="false">
+                        <button class="btn active" onclick="showButtonContent(0)" id="menu1">Apartments</button>
+                        <button class="btn" onclick="showButtonContent(1)" id="menu2">Villas</button>
+                        <button class="btn" onclick="showButtonContent(2)" id="menu3">Shops</button>
                         <!-- <button class="btn" onclick="showButtonContent(3)">Showrooms</button> -->
 
-
+                        
                     </div>
 
                     <!-- Dropdowns and Main Content -->
                     <div id="dropdowns" onclick="closes1()" data-aos="zoom-in" data-aos-delay="50" data-aos-offset="0"
-                        data-aos-duration="1000" data-aos-easing="linear" data-aos-once="false">
-                        <div class="dropdown" id="dropdown-0">
+                    data-aos-duration="1000" data-aos-easing="linear" data-aos-once="false" >
+                        <div class="dropdown" id="dropdown-0"  >
                             <div class="tag-popup" id="popupTag"><b>
-                                    يمكنكم اختيار الموقع والعثور على عقارك المفضل
-
-                                </b></div>
+                                You can select the location and find the properties
+                            </b></div>
 
                             <select onchange="showLocationContent(0, this.value)" id="menu4">
-                                <option value="">
-                                    اختر الموقع
-                                </option>
-                                <option value="loc-0-1">
-                                    مدينة السلطان قابوس
-                                </option>
-                                <option value="loc-0-2">
-                                    بوشر
-                                </option>
-                                <option value="loc-0-3">
-                                    غلا
-                                </option>
-                                <option value="loc-0-4">
-                                    الحمرية
-                                </option>
-                                <option value="loc-0-5">
-                                    وادي عدي
-                                </option>
-                                <option value="loc-0-6">
-                                    روي
-                                </option>
+                                <option value="">Select Location</option>
+                                <option value="loc-0-1">Madinat Qaboos</option>
+                                <option value="loc-0-2">Bawshar</option>
+                                <option value="loc-0-3">Ghala</option>
+                                <option value="loc-0-4">Hamriya</option>
+                                <option value="loc-0-5">Wadi Adai</option>
+                                <option value="loc-0-6">Ruwi</option>
                                 <!--<option value="loc-0-7">Al Khaburah</option>-->
                             </select>
                         </div>
 
-                        <div class="dropdown" id="dropdown-1">
+                        <div class="dropdown" id="dropdown-1" >
                             <select onchange="showLocationContent(1, this.value)">
-                                <option value="">
-                                    اختر الموقع
-                                </option>
-                                <option value="loc-1-1">
-                                    القرم
-                                </option>
-                                <option value="loc-1-2">
-                                    الرسيل
-                                </option>
-                                <option value="loc-1-3">
-                                    عبري
-                                </option>
-                                <option value="loc-1-4">
-                                    نزوى
-                                </option>
-                                <option value="loc-1-5">
-                                    الخوض
-                                </option>
-                                <option value="loc-1-6">
-                                    الخابورة
-                                </option>
+                                <option value="">Select Location</option>
+                                <option value="loc-1-1">Qurum</option>
+                                <option value="loc-1-2">Rusayl</option>
+                                <option value="loc-1-3">Ibri</option>
+                                <option value="loc-1-4">Nizwa</option>
+                                <option value="loc-1-5">Al Khoud</option>
+                                <option value="loc-1-6">Al Khaburah</option>
                                 <!--<option value="loc-1-7">Villas Location 7</option>-->
                             </select>
                         </div>
 
                         <div class="dropdown" id="dropdown-2">
                             <select onchange="showLocationContent(2, this.value)">
-                                <option value="">
-                                    اختر الموقع
-                                </option>
+                                <option value="">Select Location</option>
                                 <!-- <option value="loc-2-1">Ghala</option> -->
-                                <option value="loc-2-1">
-                                    الخابورة
-                                </option>
+                                <option value="loc-2-1">Al Khaburah</option>
                                 <!-- <option value="loc-2-3">Ibra</option>
                                 <option value="loc-2-4">Hamrya</option> -->
                                 <!--<option value="loc-2-5">Shops Location 5</option>-->
@@ -418,12 +350,8 @@
 
                         <div class="dropdown" id="dropdown-3">
                             <select onchange="showLocationContent(3, this.value)">
-                                <option value="">
-                                    اختر الموقع
-                                </option>
-                                <option value="loc-3-1">
-                                    غلا
-                                </option>
+                                <option value="">Select Location</option>
+                                <option value="loc-3-1">Ghala</option>
                                 <option value="loc-3-2">Mabela</option>
                                 <!--<option value="loc-3-3">Showrooms Location 3</option>-->
                                 <!--<option value="loc-3-4">Showrooms Location 4</option>-->
@@ -436,30 +364,23 @@
 
                     <!-- Main Content & Location Content -->
                     <div id="content-sections" data-aos="zoom-in" data-aos-delay="50" data-aos-offset="0"
-                        data-aos-duration="1000" data-aos-easing="linear" data-aos-once="false">
+                    data-aos-duration="1000" data-aos-easing="linear" data-aos-once="false">
                         <div class="content active" id="main-0">
 
                             <div class="row">
                                 <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
                                     <div class="box">
                                         <div class="imgsecs">
-                                            <img src="../imgs/apartment/img1.jpg" class=" boximg w-100" alt=""
-                                                title="" />
+                                            <img src="../imgs/apartment/img1.jpg" class=" boximg w-100" alt="" title=""  />
                                             <div class="imgsecs-cont">
                                                 <!-- <button class=" boxbtn">View</button> -->
-                                                <button class=" boxbtn1">
-                                                    للإيجار
-                                                </button>
+                                                <button class=" boxbtn1">For Rent</button>
                                             </div>
-
+                                            
                                             <div class="boxtextsec">
-                                                <p class="boctext-1">
-                                                    شقق سكنية (مجمع جبرين – بناية عبري)
-                                                </p>
+                                                <p class="boctext-1">Apartment: Jabreen Complex (Ibri Block)</p>
                                                 <!-- <p class="boctext-2"></p> -->
-                                                <p class="boctext-3">
-                                                    الموقع: بوشر
-                                                </p>
+                                                <p class="boctext-3">Location: Bawsher</p>
                                                 <hr>
                                                 <div class="flexsec boxflex">
                                                     <div class="flexsec">
@@ -472,9 +393,7 @@
                                                     </div>
                                                     <div class="flexsec">
                                                         <i class="fa-solid fa-vector-square"></i>
-                                                        <p class="bdtext">
-                                                            من 70 إلى 80 متر مربع
-                                                        </p>
+                                                        <p class="bdtext">70 to 80 Sqm</p>
                                                     </div>
                                                 </div>
 
@@ -485,23 +404,16 @@
                                 <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
                                     <div class="box">
                                         <div class="imgsecs">
-                                            <img src="../imgs/apartment/img2.jpg" class="boximg w-100" alt=""
-                                                title="" />
+                                            <img src="../imgs/apartment/img2.jpg" class="boximg w-100" alt="" title="" />
                                             <div class="imgsecs-cont">
                                                 <!-- <button class=" boxbtn">View</button> -->
-                                                <button class=" boxbtn1">
-                                                    للإيجار
-                                                </button>
+                                                <button class=" boxbtn1">For Rent</button>
                                             </div>
-
+                                            
                                             <div class="boxtextsec">
-                                                <p class="boctext-1">
-                                                    شقق سكنية (بناية الحي التجاري)
-                                                </p>
+                                                <p class="boctext-1">Apartment: CBD Building</p>
                                                 <!-- <p class="boctext-2"></p> -->
-                                                <p class="boctext-3">
-                                                    الموقع : روي
-                                                </p>
+                                                <p class="boctext-3">Location: Ruwi</p>
                                                 <hr>
                                                 <div class="flexsec boxflex">
                                                     <div class="flexsec">
@@ -525,23 +437,16 @@
                                 <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
                                     <div class="box">
                                         <div class="imgsecs">
-                                            <img src="../imgs/apartment/img3.jpg" class="boximg w-100" alt=""
-                                                title="" />
+                                            <img src="../imgs/apartment/img3.jpg" class="boximg w-100" alt="" title="" />
                                             <div class="imgsecs-cont">
                                                 <!-- <button class=" boxbtn">View</button> -->
-                                                <button class=" boxbtn1">
-                                                    للإيجار
-                                                </button>
+                                                <button class=" boxbtn1">For Rent</button>
                                             </div>
-
+                                            
                                             <div class="boxtextsec">
-                                                <p class="boctext-1">
-                                                    شقق سكنية (أبراج غلا)
-                                                </p>
+                                                <p class="boctext-1">Apartment: Ghala Tower</p>
                                                 <!-- <p class="boctext-2"></p> -->
-                                                <p class="boctext-3">
-                                                    الموقع: غلا
-                                                </p>
+                                                <p class="boctext-3">Location: Ghala</p>
                                                 <hr>
                                                 <div class="flexsec boxflex">
                                                     <div class="flexsec">
@@ -554,9 +459,7 @@
                                                     </div>
                                                     <div class="flexsec">
                                                         <i class="fa-solid fa-vector-square"></i>
-                                                        <p class="bdtext">
-                                                            من 70 إلى 80 متر مربع
-                                                        </p>
+                                                        <p class="bdtext"> 70 to 80 Sqm</p>
                                                     </div>
                                                 </div>
 
@@ -565,7 +468,7 @@
                                     </div>
                                 </div>
 
-
+                              
                             </div>
                         </div>
                         <div class="content" id="main-1">
@@ -576,19 +479,13 @@
                                             <img src="../imgs/villas/img1.jpg" class="boximg w-100" alt="" title="" />
                                             <div class="imgsecs-cont">
                                                 <!-- <button class=" boxbtn">View</button> -->
-                                                <button class=" boxbtn1">
-                                                    للإيجار
-                                                </button>
+                                                <button class=" boxbtn1">For Rent</button>
                                             </div>
-
+                                            
                                             <div class="boxtextsec">
-                                                <p class="boctext-1">
-                                                    فلل: مجمع الجيران (28 فيلا)
-                                                </p>
+                                                <p class="boctext-1">Villas: Al Jiran complex(28 villas)</p>
                                                 <!-- <p class="boctext-2"></p> -->
-                                                <p class="boctext-3">
-                                                    الموقع: نزوى
-                                                </p>
+                                                <p class="boctext-3">Location: Nizwa</p>
                                                 <hr>
                                                 <div class="flexsec boxflex">
                                                     <div class="flexsec">
@@ -601,9 +498,7 @@
                                                     </div>
                                                     <div class="flexsec">
                                                         <i class="fa-solid fa-vector-square"></i>
-                                                        <p class="bdtext">
-                                                            152متر مربع
-                                                        </p>
+                                                        <p class="bdtext">152 Sqm</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -616,19 +511,13 @@
                                             <img src="../imgs/villas/img2.jpg" class="boximg w-100" alt="" title="" />
                                             <div class="imgsecs-cont">
                                                 <!-- <button class=" boxbtn">View</button> -->
-                                                <button class=" boxbtn1">
-                                                    للإيجار
-                                                </button>
+                                                <button class=" boxbtn1">For Rent</button>
                                             </div>
-
+                                            
                                             <div class="boxtextsec">
-                                                <p class="boctext-1">
-                                                    فلل: مجمع الجيران (27 فيلا)
-                                                </p>
+                                                <p class="boctext-1">Villas: Al Jiran complex(27 villas)</p>
                                                 <!-- <p class="boctext-2"></p> -->
-                                                <p class="boctext-3">
-                                                    الموقع: عبري
-                                                </p>
+                                                <p class="boctext-3">Location: Ibri</p>
                                                 <hr>
                                                 <div class="flexsec boxflex">
                                                     <div class="flexsec">
@@ -641,9 +530,7 @@
                                                     </div>
                                                     <div class="flexsec">
                                                         <i class="fa-solid fa-vector-square"></i>
-                                                        <p class="bdtext">
-                                                            153متر مربع
-                                                        </p>
+                                                        <p class="bdtext">153 Sqm</p>
                                                     </div>
                                                 </div>
 
@@ -657,20 +544,13 @@
                                             <img src="../imgs/villas/img3.jpg" class="boximg w-100" alt="" title="" />
                                             <div class="imgsecs-cont">
                                                 <!-- <button class=" boxbtn">View</button> -->
-                                                <button class=" boxbtn1">
-                                                    للإيجار
-                                                </button>
+                                                <button class=" boxbtn1">For Rent</button>
                                             </div>
-
+                                            
                                             <div class="boxtextsec">
-                                                <p class="boctext-1">
-
-                                                    فلل: الجفنين (فلل مزدوجة)
-                                                </p>
+                                                <p class="boctext-1">Villas: Jafnayn (Twin villas)</p>
                                                 <!-- <p class="boctext-2"></p> -->
-                                                <p class="boctext-3">
-                                                    الموقع: الرسيل
-                                                </p>
+                                                <p class="boctext-3">Location: Rusyl</p>
                                                 <hr>
                                                 <div class="flexsec boxflex">
                                                     <div class="flexsec">
@@ -683,43 +563,32 @@
                                                     </div>
                                                     <div class="flexsec">
                                                         <i class="fa-solid fa-vector-square"></i>
-                                                        <p class="bdtext">
-                                                            160متر مربع
-                                                        </p>
+                                                        <p class="bdtext">160 Sqm</p>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-
+                              
                             </div>
                         </div>
                         <div class="content" id="main-2">
                             <div class="row">
-                                <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
+                                  <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
                                     <div class="box">
                                         <div class="imgsecs">
-                                            <img src="../imgs/shops/img1.jpg" onclick="showContent(9)"
-                                                class="boximg w-100" alt="" title="" />
+                                            <img src="../imgs/shops/img1.jpg" onclick="showContent(9)"  class="boximg w-100" alt="" title="" />
                                             <div class="imgsecs-cont">
-
-                                                <button class=" boxbtn1">
-                                                    للإيجار
-                                                </button>
-                                                <button class=" boxbtn" onclick="showContent(9)">
-                                                    منظر
-                                                </button>
+                                               
+                                                <button class=" boxbtn1">For Rent</button>
+                                                 <button class=" boxbtn" onclick="showContent(9)">View</button>
                                             </div>
-
+                                            
                                             <div class="boxtextsec">
-                                                <p class="boctext-1">
-                                                    محلات تجارية: مجمع الحمض
-                                                </p>
+                                                <p class="boctext-1">Shops: Al Hamadh complex</p>
                                                 <!-- <p class="boctext-2"></p> -->
-                                                <p class="boctext-3">
-                                                    الموقع: الخابورة
-                                                </p>
+                                                <p class="boctext-3">Location: Al Khabourah</p>
                                                 <!--<hr>-->
                                                 <!--<div class="flexsec boxflex">-->
                                                 <!--    <div class="flexsec">-->
@@ -742,26 +611,17 @@
                                 <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
                                     <div class="box">
                                         <div class="imgsecs">
-                                            <img src="../imgs/search-properties/shops/ai-Khabourah/alba-img1.jpg"
-                                                onclick="showContent(12)" class="boximg w-100" alt="" title="" />
+                                            <img src="../imgs/search-properties/shops/ai-Khabourah/alba-img1.jpg"  onclick="showContent(12)" class="boximg w-100" alt="" title="" />
                                             <div class="imgsecs-cont">
-
-                                                <button class=" boxbtn1">
-                                                    للإيجار
-                                                </button>
-                                                <button class=" boxbtn" onclick="showContent(12)">
-                                                    منظر
-                                                </button>
+                                                
+                                                <button class=" boxbtn1">For Rent</button>
+                                                  <button class=" boxbtn" onclick="showContent(12)">View</button>
                                             </div>
-
+                                            
                                             <div class="boxtextsec">
-                                                <p class="boctext-1">
-                                                    محلات تجارية: مجمع سوق البرزة
-                                                </p>
+                                                <p class="boctext-1">Shops: AL Barzah Souq Complex</p>
                                                 <!-- <p class="boctext-2"></p> -->
-                                                <p class="boctext-3">
-                                                    الموقع: الخابورة
-                                                </p>
+                                                <p class="boctext-3">Location: Al Khabourah</p>
                                                 <!--<hr>-->
                                                 <!--<div class="flexsec boxflex">-->
                                                 <!--    <div class="flexsec">-->
@@ -781,7 +641,7 @@
                                         </div>
                                     </div>
                                 </div>
-
+                              
                             </div>
                         </div>
                         <!-- <div class="content" id="main-3">
@@ -793,36 +653,27 @@
                         </div> -->
 
                         <div class="content" id="loc-0-1">
-
+                            
                             <h2 class="mainhead ">
                                 <strong>
-                                    مدينة السلطان قابوس
+                                    Madinat Qaboos
                                 </strong>
-                            </h2>
+                            </h2>                     
                             <div class="row">
                                 <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
                                     <div class="box">
                                         <div class="imgsecs">
-                                            <img src="../imgs/search-properties/apartments/mq/Al-Zimam-complex.jpg"
-                                                onclick="showContent(1)" class="boximg w-100" alt="" title="" />
+                                            <img src="../imgs/search-properties/apartments/mq/Al-Zimam-complex.jpg" onclick="showContent(1)" class="boximg w-100" alt="" title="" />
                                             <div class="imgsecs-cont">
-
-                                                <button class=" boxbtn1">
-                                                    للإيجار
-                                                </button>
-                                                <button class=" boxbtn" onclick="showContent(1)">
-                                                    منظر
-                                                </button>
+                                              
+                                                <button class=" boxbtn1">For Rent</button>
+                                                <button class=" boxbtn" onclick="showContent(1)">View</button>
                                             </div>
-
+                                            
                                             <div class="boxtextsec">
-                                                <p class="boctext-1">
-                                                    شقق سكنية: مجمع الزمام
-                                                </p>
+                                                <p class="boctext-1">Apartment: Al Zimam Complex</p>
                                                 <!-- <p class="boctext-2">lorem</p> -->
-                                                <p class="boctext-3">
-                                                    الموقع: مدينة السلطان قابوس
-                                                </p>
+                                                <p class="boctext-3">Location: Madinat Qaboos</p>
                                                 <hr>
                                                 <div class="flexsec boxflex">
                                                     <div class="flexsec">
@@ -835,9 +686,7 @@
                                                     </div>
                                                     <div class="flexsec">
                                                         <i class="fa-solid fa-vector-square"></i>
-                                                        <p class="bdtext">
-                                                            من 70 إلى 80 متر مربع
-                                                        </p>
+                                                        <p class="bdtext">70 to 80 Sqm</p>
                                                     </div>
                                                 </div>
 
@@ -845,44 +694,35 @@
                                         </div>
                                     </div>
                                 </div>
-
-
+                                                
+                              
                             </div>
                         </div>
                         <div class="content" id="loc-0-2">
                             <h2 class="mainhead ">
                                 <strong>
-                                    بوشر
+                                    Bawshar
                                 </strong>
                             </h2>
                             <style>
-
+                             
                             </style>
-
+                          
                             <div class="row">
-                                <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
+                                  <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
                                     <div class="box">
                                         <div class="imgsecs">
-                                            <img src="../imgs/search-properties/apartments/bawsher/Majan-complex-Image-1.jpg"
-                                                onclick="showContent(14)" class="boximg w-100" alt="" title="" />
+                                            <img src="../imgs/search-properties/apartments/bawsher/Majan-complex-Image-1.jpg" onclick="showContent(14)" class="boximg w-100" alt="" title="" />
                                             <div class="imgsecs-cont">
-
-                                                <button class=" boxbtn1">
-                                                    للإيجار
-                                                </button>
-                                                <button class=" boxbtn" onclick="showContent(14)">
-                                                    منظر
-                                                </button>
+                                              
+                                                <button class=" boxbtn1">For Rent</button>
+                                                  <button class=" boxbtn" onclick="showContent(14)">View</button>
                                             </div>
-
+                                            
                                             <div class="boxtextsec">
-                                                <p class="boctext-1">
-                                                    شقق سكنية: مجمع مَجَان
-                                                </p>
+                                                <p class="boctext-1">Apartment: Majan-complex</p>
                                                 <!-- <p class="boctext-2">Lorem</p> -->
-                                                <p class="boctext-3">
-                                                    الموقع: بوشر
-                                                </p>
+                                                <p class="boctext-3">Location: Bawshar</p>
                                                 <hr>
                                                 <div class="flexsec boxflex">
                                                     <div class="flexsec">
@@ -895,9 +735,7 @@
                                                     </div>
                                                     <div class="flexsec">
                                                         <i class="fa-solid fa-vector-square"></i>
-                                                        <p class="bdtext">
-                                                            من 70 إلى 80 متر مربع
-                                                        </p>
+                                                        <p class="bdtext">70 to 80 Sqm</p>
                                                     </div>
                                                 </div>
 
@@ -908,23 +746,16 @@
                                 <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
                                     <div class="box">
                                         <div class="imgsecs">
-                                            <img src="../imgs/search-properties/apartments/bawsher/Majan-complex-Image-3.jpg"
-                                                class="boximg w-100" alt="" title="" />
+                                            <img src="../imgs/search-properties/apartments/bawsher/Majan-complex-Image-3.jpg" class="boximg w-100" alt="" title="" />
                                             <div class="imgsecs-cont">
                                                 <!-- <button class=" boxbtn">View</button> -->
-                                                <button class=" boxbtn1">
-                                                    للإيجار
-                                                </button>
+                                                <button class=" boxbtn1">For Rent</button>
                                             </div>
-
+                                            
                                             <div class="boxtextsec">
-                                                <p class="boctext-1">
-                                                    مواقف سيارات: مجمع مجان
-                                                </p>
+                                                <p class="boctext-1">Apartment: Majan Complex Parking</p>
                                                 <!-- <p class="boctext-2">Lorem</p> -->
-                                                <p class="boctext-3">
-                                                    الموقع: بوشر
-                                                </p>
+                                                <p class="boctext-3">Location: Bawshar</p>
                                                 <hr>
                                                 <div class="flexsec boxflex">
                                                     <div class="flexsec">
@@ -937,9 +768,7 @@
                                                     </div>
                                                     <div class="flexsec">
                                                         <i class="fa-solid fa-vector-square"></i>
-                                                        <p class="bdtext">
-                                                            من 70 إلى 80 متر مربع
-                                                        </p>
+                                                        <p class="bdtext">70 to 80 Sqm</p>
                                                     </div>
                                                 </div>
 
@@ -947,28 +776,21 @@
                                         </div>
                                     </div>
                                 </div>
-
-
+                               
+                              
                                 <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
                                     <div class="box">
                                         <div class="imgsecs">
-                                            <img src="../imgs/search-properties/apartments/bawsher/Majan-complex-khabura.jpg"
-                                                class="boximg w-100" alt="" title="" />
+                                            <img src="../imgs/search-properties/apartments/bawsher/Majan-complex-khabura.jpg" class="boximg w-100" alt="" title="" />
                                             <div class="imgsecs-cont">
                                                 <!-- <button class=" boxbtn">View</button> -->
-                                                <button class=" boxbtn1">
-                                                    للإيجار
-                                                </button>
+                                                <button class=" boxbtn1">For Rent</button>
                                             </div>
-
+                                            
                                             <div class="boxtextsec">
-                                                <p class="boctext-1">
-                                                    شقق سكنية: بناية الخابورة
-                                                </p>
+                                                <p class="boctext-1">Apartment: Khaburah Block</p>
                                                 <!-- <p class="boctext-2">Lorem</p> -->
-                                                <p class="boctext-3">
-                                                    الموقع: بوشر
-                                                </p>
+                                                <p class="boctext-3">Location: Bawshar</p>
                                                 <hr>
                                                 <div class="flexsec boxflex">
                                                     <div class="flexsec">
@@ -981,36 +803,27 @@
                                                     </div>
                                                     <div class="flexsec">
                                                         <i class="fa-solid fa-vector-square"></i>
-                                                        <p class="bdtext">
-                                                            من 70 إلى 80 متر مربع
-                                                        </p>
+                                                        <p class="bdtext">70 to 80 Sqm</p>
                                                     </div>
                                                 </div>
 
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div>                              
                                 <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
                                     <div class="box">
                                         <div class="imgsecs">
-                                            <img src="../imgs/search-properties/apartments/bawsher/Majan-complex-Liwa.jpg"
-                                                class="boximg w-100" alt="" title="" />
+                                            <img src="../imgs/search-properties/apartments/bawsher/Majan-complex-Liwa.jpg" class="boximg w-100" alt="" title="" />
                                             <div class="imgsecs-cont">
                                                 <!-- <button class=" boxbtn">View</button> -->
-                                                <button class=" boxbtn1">
-                                                    للإيجار
-                                                </button>
+                                                <button class=" boxbtn1">For Rent</button>
                                             </div>
-
+                                            
                                             <div class="boxtextsec">
-                                                <p class="boctext-1">
-                                                    شقق سكنية: بناية لوى
-                                                </p>
+                                                <p class="boctext-1">Apartment:  Liwa Block</p>
                                                 <!-- <p class="boctext-2">Lorem</p> -->
-                                                <p class="boctext-3">
-                                                    الموقع: بوشر
-                                                </p>
+                                                <p class="boctext-3">Location: Bawshar</p>
                                                 <hr>
                                                 <div class="flexsec boxflex">
                                                     <div class="flexsec">
@@ -1023,9 +836,7 @@
                                                     </div>
                                                     <div class="flexsec">
                                                         <i class="fa-solid fa-vector-square"></i>
-                                                        <p class="bdtext">
-                                                            من 70 إلى 80 متر مربع
-                                                        </p>
+                                                        <p class="bdtext">70 to 80 Sqm</p>
                                                     </div>
                                                 </div>
 
@@ -1038,15 +849,13 @@
                                 <!--        <div class="imgsecs">-->
                                 <!--            <img src="../imgs/search-properties/apartments/bawsher/Majan-Complex-Liwa-block.jpg" class="boximg w-100" alt="" title="" />-->
                                 <!--            <div class="imgsecs-cont">-->
-                                <!-- <button class=" boxbtn">View</button> -->
-                                <!--                    <button class=" boxbtn1">
-                                                    للإيجار
-                                                </button>-->
+                                                <!-- <button class=" boxbtn">View</button> -->
+                                <!--                <button class=" boxbtn1">For Rent</button>-->
                                 <!--            </div>-->
-
+                                            
                                 <!--            <div class="boxtextsec">-->
                                 <!--                <p class="boctext-1">Apartment: Majan Complex Liwa Block</p>-->
-                                <!-- <p class="boctext-2">Lorem</p> -->
+                                                <!-- <p class="boctext-2">Lorem</p> -->
                                 <!--                <p class="boctext-3">Location: Bawshar</p>-->
                                 <!--                <hr>-->
                                 <!--                <div class="flexsec boxflex">-->
@@ -1071,23 +880,16 @@
                                 <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
                                     <div class="box">
                                         <div class="imgsecs">
-                                            <img src="../imgs/search-properties/apartments/bawsher/Majan-complex-shinas.jpg"
-                                                class="boximg w-100" alt="" title="" />
+                                            <img src="../imgs/search-properties/apartments/bawsher/Majan-complex-shinas.jpg" class="boximg w-100" alt="" title="" />
                                             <div class="imgsecs-cont">
                                                 <!-- <button class=" boxbtn">View</button> -->
-                                                <button class=" boxbtn1">
-                                                    للإيجار
-                                                </button>
+                                                <button class=" boxbtn1">For Rent</button>
                                             </div>
-
+                                            
                                             <div class="boxtextsec">
-                                                <p class="boctext-1">
-                                                    شقق سكنية: بناية شناص
-                                                </p>
+                                                <p class="boctext-1">Apartment:  Shinas Block</p>
                                                 <!-- <p class="boctext-2">Lorem</p> -->
-                                                <p class="boctext-3">
-                                                    الموقع: بوشر
-                                                </p>
+                                                <p class="boctext-3">Location: Bawshar</p>
                                                 <hr>
                                                 <div class="flexsec boxflex">
                                                     <div class="flexsec">
@@ -1100,9 +902,7 @@
                                                     </div>
                                                     <div class="flexsec">
                                                         <i class="fa-solid fa-vector-square"></i>
-                                                        <p class="bdtext">
-                                                            من 70 إلى 80 متر مربع
-                                                        </p>
+                                                        <p class="bdtext">70 to 80 Sqm</p>
                                                     </div>
                                                 </div>
 
@@ -1115,15 +915,13 @@
                                 <!--        <div class="imgsecs">-->
                                 <!--            <img src="../imgs/search-properties/apartments/bawsher/Majan-Complex-Shinas-block.jpg" class="boximg w-100" alt="" title="" />-->
                                 <!--            <div class="imgsecs-cont">-->
-                                <!-- <button class=" boxbtn">View</button> -->
-                                <!--                    <button class=" boxbtn1">
-                                                    للإيجار
-                                                </button>-->
+                                                <!-- <button class=" boxbtn">View</button> -->
+                                <!--                <button class=" boxbtn1">For Rent</button>-->
                                 <!--            </div>-->
-
+                                            
                                 <!--            <div class="boxtextsec">-->
                                 <!--                <p class="boctext-1">Apartment: Majan Complex Shinas Block</p>-->
-                                <!-- <p class="boctext-2">Lorem</p> -->
+                                                <!-- <p class="boctext-2">Lorem</p> -->
                                 <!--                <p class="boctext-3">Location: Bawshar</p>-->
                                 <!--                <hr>-->
                                 <!--                <div class="flexsec boxflex">-->
@@ -1148,23 +946,16 @@
                                 <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
                                     <div class="box">
                                         <div class="imgsecs">
-                                            <img src="../imgs/search-properties/apartments/bawsher/Majan-complex-Sohar.jpg"
-                                                class="boximg w-100" alt="" title="" />
+                                            <img src="../imgs/search-properties/apartments/bawsher/Majan-complex-Sohar.jpg" class="boximg w-100" alt="" title="" />
                                             <div class="imgsecs-cont">
                                                 <!-- <button class=" boxbtn">View</button> -->
-                                                <button class=" boxbtn1">
-                                                    للإيجار
-                                                </button>
+                                                <button class=" boxbtn1">For Rent</button>
                                             </div>
-
+                                            
                                             <div class="boxtextsec">
-                                                <p class="boctext-1">
-                                                    شقق سكنية: بناية صحار
-                                                </p>
+                                                <p class="boctext-1">Apartment:  Sohar Block</p>
                                                 <!-- <p class="boctext-2">Lorem</p> -->
-                                                <p class="boctext-3">
-                                                    الموقع: بوشر
-                                                </p>
+                                                <p class="boctext-3">Location: Bawshar</p>
                                                 <hr>
                                                 <div class="flexsec boxflex">
                                                     <div class="flexsec">
@@ -1177,9 +968,7 @@
                                                     </div>
                                                     <div class="flexsec">
                                                         <i class="fa-solid fa-vector-square"></i>
-                                                        <p class="bdtext">
-                                                            من 70 إلى 80 متر مربع
-                                                        </p>
+                                                        <p class="bdtext">70 to 80 Sqm</p>
                                                     </div>
                                                 </div>
 
@@ -1187,26 +976,19 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
+                                 <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
                                     <div class="box">
                                         <div class="imgsecs">
-                                            <img src="../imgs/search-properties/apartments/bawsher/Jabreen-complex-Ibri.jpg"
-                                                class="boximg w-100" alt="" title="" />
+                                            <img src="../imgs/search-properties/apartments/bawsher/Jabreen-complex-Ibri.jpg" class="boximg w-100" alt="" title="" />
                                             <div class="imgsecs-cont">
                                                 <!-- <button class=" boxbtn">View</button> -->
-                                                <button class=" boxbtn1">
-                                                    للإيجار
-                                                </button>
+                                                <button class=" boxbtn1">For Rent</button>
                                             </div>
-
+                                            
                                             <div class="boxtextsec">
-                                                <p class="boctext-1">
-                                                    شقق سكنية: مجمع جبرين (بناية عبري)
-                                                </p>
+                                                <p class="boctext-1">Apartment: Jabreen complex (Ibri Block)</p>
                                                 <!-- <p class="boctext-2">lorem</p> -->
-                                                <p class="boctext-3">
-                                                    الموقع: بوشر
-                                                </p>
+                                                <p class="boctext-3">Location: Bawshar</p>
                                                 <hr>
                                                 <div class="flexsec boxflex">
                                                     <div class="flexsec">
@@ -1219,9 +1001,7 @@
                                                     </div>
                                                     <div class="flexsec">
                                                         <i class="fa-solid fa-vector-square"></i>
-                                                        <p class="bdtext">
-                                                            من 70 إلى 80 متر مربع
-                                                        </p>
+                                                        <p class="bdtext">70 to 80 Sqm</p>
                                                     </div>
                                                 </div>
 
@@ -1232,23 +1012,16 @@
                                 <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
                                     <div class="box">
                                         <div class="imgsecs">
-                                            <img src="../imgs/search-properties/apartments/bawsher/Jabren-complex-Nizwa.jpg"
-                                                class="boximg w-100" alt="" title="" />
+                                            <img src="../imgs/search-properties/apartments/bawsher/Jabren-complex-Nizwa.jpg" class="boximg w-100" alt="" title="" />
                                             <div class="imgsecs-cont">
                                                 <!-- <button class=" boxbtn">View</button> -->
-                                                <button class=" boxbtn1">
-                                                    للإيجار
-                                                </button>
+                                                <button class=" boxbtn1">For Rent</button>
                                             </div>
-
+                                            
                                             <div class="boxtextsec">
-                                                <p class="boctext-1">
-                                                    شقق سكنية: مجمع جبرين (بناية نزوى)
-                                                </p>
+                                                <p class="boctext-1">Apartment: Jabreen Complex (Nizwa Block)</p>
                                                 <!-- <p class="boctext-2">Lorem</p> -->
-                                                <p class="boctext-3">
-                                                    الموقع: بوشر
-                                                </p>
+                                                <p class="boctext-3">Location:  Bawshar</p>
                                                 <hr>
                                                 <div class="flexsec boxflex">
                                                     <div class="flexsec">
@@ -1261,9 +1034,7 @@
                                                     </div>
                                                     <div class="flexsec">
                                                         <i class="fa-solid fa-vector-square"></i>
-                                                        <p class="bdtext">
-                                                            من 70 إلى 80 متر مربع
-                                                        </p>
+                                                        <p class="bdtext">70 to 80 Sqm</p>
                                                     </div>
                                                 </div>
 
@@ -1271,40 +1042,33 @@
                                         </div>
                                     </div>
                                 </div>
-
-
+                        
+                              
                             </div>
                         </div>
                         <div class="content" id="loc-0-3">
                             <h2 class="mainhead ">
                                 <strong>
-                                    غلا
+                                    Ghala
                                 </strong>
                             </h2>
-
+                          
                             <div class="row">
-
-                                <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
+                               
+                                  <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
                                     <div class="box">
                                         <div class="imgsecs">
-                                            <img src="../imgs/search-properties/apartments/ghala/Ghala-Tower.jpg"
-                                                onclick="showContent(2)" class="boximg w-100" alt="" title="" />
+                                            <img src="../imgs/search-properties/apartments/ghala/Ghala-Tower.jpg" onclick="showContent(2)" class="boximg w-100" alt="" title=""  />
                                             <div class="imgsecs-cont">
-
-                                                <button class=" boxbtn1">
-                                                    للإيجار
-                                                </button>
-                                                <button class=" boxbtn" onclick="showContent(2)">
-                                                    منظر
-                                                </button>
+                                              
+                                                <button class=" boxbtn1">For Rent</button>
+                                                <button class=" boxbtn" onclick="showContent(2)">View</button>
                                             </div>
-
+                                            
                                             <div class="boxtextsec">
-                                                <p class="boctext-1">شقق سكنية (أبراج غلا)</p>
+                                                <p class="boctext-1">Apartment: Ghala-Tower</p>
                                                 <!-- <p class="boctext-2">Lorem</p> -->
-                                                <p class="boctext-3">
-                                                    الموقع: غلا
-                                                </p>
+                                                <p class="boctext-3">Location: Ghala</p>
                                                 <hr>
                                                 <div class="flexsec boxflex">
                                                     <div class="flexsec">
@@ -1317,9 +1081,7 @@
                                                     </div>
                                                     <div class="flexsec">
                                                         <i class="fa-solid fa-vector-square"></i>
-                                                        <p class="bdtext">
-                                                            من 70 إلى 80 متر مربع
-                                                        </p>
+                                                        <p class="bdtext">70 to 80 Sqm</p>
                                                     </div>
                                                 </div>
 
@@ -1327,41 +1089,31 @@
                                         </div>
                                     </div>
                                 </div>
-
+                                 
                             </div>
                         </div>
                         <div class="content" id="loc-0-4">
                             <h2 class="mainhead ">
                                 <strong>
-                                    الحمرية
+                                    Hamriya
                                 </strong>
                             </h2>
-
+                           
                             <div class="row">
                                 <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
                                     <div class="box">
                                         <div class="imgsecs">
-                                            <img src="../imgs/search-properties/apartments/humriya/Humriya-Apartment.jpg"
-                                                onclick="showContent(11)" class="boximg w-100" alt="" title="" />
+                                            <img src="../imgs/search-properties/apartments/humriya/Humriya-Apartment.jpg" onclick="showContent(11)" class="boximg w-100" alt="" title="" />
                                             <div class="imgsecs-cont">
-
-                                                <button class=" boxbtn1">
-                                                    للإيجار
-                                                </button>
-                                                <button class=" boxbtn" onclick="showContent(11)">
-                                                    منظر
-                                                </button>
+                                               
+                                                <button class=" boxbtn1">For Rent</button>
+                                                 <button class=" boxbtn" onclick="showContent(11)">View</button>
                                             </div>
-
+                                            
                                             <div class="boxtextsec">
-                                                <p class="boctext-1">
-                                                    شقق سكنية
-                                                </p>
+                                                <p class="boctext-1">Apartment:</p>
                                                 <!-- <p class="boctext-2">lorem</p> -->
-                                                <p class="boctext-3">
-
-                                                    الموقع: الحمرية
-                                                </p>
+                                                <p class="boctext-3">Location: Hamriya</p>
                                                 <hr>
                                                 <div class="flexsec boxflex">
                                                     <div class="flexsec">
@@ -1374,9 +1126,7 @@
                                                     </div>
                                                     <div class="flexsec">
                                                         <i class="fa-solid fa-vector-square"></i>
-                                                        <p class="bdtext">
-                                                            من 70 إلى 80 متر مربع
-                                                        </p>
+                                                        <p class="bdtext">70 to 80 Sqm</p>
                                                     </div>
                                                 </div>
 
@@ -1384,39 +1134,30 @@
                                         </div>
                                     </div>
                                 </div>
-
+                              
                             </div>
                         </div>
                         <div class="content" id="loc-0-5">
                             <h2 class="mainhead ">
                                 <strong>
-                                    وادي عدي
+                                    Wadi Adai
                                 </strong>
                             </h2>
                             <div class="row">
                                 <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
                                     <div class="box">
                                         <div class="imgsecs">
-                                            <img src="../imgs/search-properties/apartments/wa/wadi-adi-building.jpg"
-                                                onclick="showContent(3)" class="boximg w-100" alt="" title="" />
+                                            <img src="../imgs/search-properties/apartments/wa/wadi-adi-building.jpg" onclick="showContent(3)" class="boximg w-100" alt="" title="" />
                                             <div class="imgsecs-cont">
-
-                                                <button class=" boxbtn1">
-                                                    للإيجار
-                                                </button>
-                                                <button class=" boxbtn" onclick="showContent(3)">
-                                                    منظر
-                                                </button>
+                                           
+                                                <button class=" boxbtn1">For Rent</button>
+                                                <button class=" boxbtn" onclick="showContent(3)">View</button>
                                             </div>
-
+                                            
                                             <div class="boxtextsec">
-                                                <p class="boctext-1">
-                                                    وحدات سكنية: بناية وادي عدي
-                                                </p>
+                                                <p class="boctext-1">Apartment: Wadi Adai Building</p>
                                                 <!-- <p class="boctext-2">lorem</p> -->
-                                                <p class="boctext-3">
-                                                    الموقع: وادي عدي
-                                                </p>
+                                                <p class="boctext-3">Location: Wadi Adai</p>
                                                 <hr>
                                                 <div class="flexsec boxflex">
                                                     <div class="flexsec">
@@ -1429,9 +1170,7 @@
                                                     </div>
                                                     <div class="flexsec">
                                                         <i class="fa-solid fa-vector-square"></i>
-                                                        <p class="bdtext">
-                                                            من 70 إلى 80 متر مربع
-                                                        </p>
+                                                        <p class="bdtext">70 to 80 Sqm</p>
                                                     </div>
                                                 </div>
 
@@ -1439,39 +1178,30 @@
                                         </div>
                                     </div>
                                 </div>
-
+                              
                             </div>
                         </div>
                         <div class="content" id="loc-0-6">
                             <h2 class="mainhead ">
                                 <strong>
-                                    روي
+                                    Ruwi
                                 </strong>
                             </h2>
                             <div class="row">
                                 <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
                                     <div class="box">
                                         <div class="imgsecs">
-                                            <img src="../imgs/search-properties/apartments/ruwi/cbd-building.jpg"
-                                                onclick="showContent(4)" class="boximg w-100" alt="" title="" />
+                                            <img src="../imgs/search-properties/apartments/ruwi/cbd-building.jpg" onclick="showContent(4)" class="boximg w-100" alt="" title="" />
                                             <div class="imgsecs-cont">
-
-                                                <button class=" boxbtn1">
-                                                    للإيجار
-                                                </button>
-                                                <button class=" boxbtn" onclick="showContent(4)">
-                                                    منظر
-                                                </button>
+                                            
+                                                <button class=" boxbtn1">For Rent</button>
+                                                <button class=" boxbtn" onclick="showContent(4)">View</button>
                                             </div>
-
+                                            
                                             <div class="boxtextsec">
-                                                <p class="boctext-1">
-                                                    شقق سكنية
-                                                </p>
+                                                <p class="boctext-1">Apartment:</p>
                                                 <!-- <p class="boctext-2">lorem</p> -->
-                                                <p class="boctext-3">
-                                                    الموقع: روي
-                                                </p>
+                                                <p class="boctext-3">Location:  Ruwi</p>
                                                 <hr>
                                                 <div class="flexsec boxflex">
                                                     <div class="flexsec">
@@ -1484,9 +1214,7 @@
                                                     </div>
                                                     <div class="flexsec">
                                                         <i class="fa-solid fa-vector-square"></i>
-                                                        <p class="bdtext">
-                                                            من 70 إلى 80 متر مربع
-                                                        </p>
+                                                        <p class="bdtext">70 to 80 Sqm</p>
                                                     </div>
                                                 </div>
 
@@ -1494,14 +1222,14 @@
                                         </div>
                                     </div>
                                 </div>
-
+                              
                             </div>
                         </div>
                         <div class="content" id="loc-0-7">
 
                             <h2 class="mainhead ">
                                 <strong>
-                                    الخابورة
+                                    Al Khaburah
                                 </strong>
                             </h2>
                             <center>
@@ -1515,32 +1243,24 @@
                         <div class="content" id="loc-1-1">
                             <h2 class="mainhead ">
                                 <strong>
-                                    القرم
+                                    Qurum
                                 </strong>
                             </h2>
                             <div class="row">
                                 <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
                                     <div class="box">
-                                        <div class="imgsecs">
-                                            <img src="../imgs/search-properties/villas/qurum/1-1.jpg"
-                                                class="boximg w-100" alt="" title="" onclick="showContent(5)" />
+                                        <div class="imgsecs" >
+                                            <img src="../imgs/search-properties/villas/qurum/1-1.jpg"class="boximg w-100" alt="" title=""  onclick="showContent(5)" />
                                             <div class="imgsecs-cont">
-
-                                                <button class=" boxbtn1">
-                                                    للإيجار
-                                                </button>
-                                                <button class=" boxbtn" onclick="showContent(5)">
-                                                    منظر
-                                                </button>
+                                               
+                                                <button class=" boxbtn1">For Rent</button>
+                                                <button class=" boxbtn" onclick="showContent(5)">View</button>
                                             </div>
-
+                                            
                                             <div class="boxtextsec">
-                                                <p class="boctext-1">
-                                                    فلل: الأوتاد (21 فيلا) </p>
+                                                <p class="boctext-1">Villas:Al Awtad (21 Villas)  </p>
                                                 <!-- <p class="boctext-2">lorem</p> -->
-                                                <p class="boctext-3">
-                                                    الموقع: القرم
-                                                </p>
+                                                <p class="boctext-3">Location:    Qurum</p>
                                                 <hr>
                                                 <div class="flexsec boxflex">
                                                     <div class="flexsec">
@@ -1553,9 +1273,7 @@
                                                     </div>
                                                     <div class="flexsec">
                                                         <i class="fa-solid fa-vector-square"></i>
-                                                        <p class="bdtext">
-                                                            من 70 إلى 80 متر مربع
-                                                        </p>
+                                                        <p class="bdtext">70 to 80 Sqm</p>
                                                     </div>
                                                 </div>
 
@@ -1563,37 +1281,30 @@
                                         </div>
                                     </div>
                                 </div>
-
+                              
 
                             </div>
                         </div>
                         <div class="content" id="loc-1-2">
                             <h2 class="mainhead ">
                                 <strong>
-                                    الرسيل
+                                    Rusayl
                                 </strong>
                             </h2>
                             <div class="row">
                                 <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
                                     <div class="box">
                                         <div class="imgsecs">
-                                            <img src="../imgs/search-properties/villas/rusayl/Jafnayn(Twin-Villas).jpg"
-                                                class="boximg w-100" alt="" title="" />
+                                            <img src="../imgs/search-properties/villas/rusayl/Jafnayn(Twin-Villas).jpg" class="boximg w-100" alt="" title="" />
                                             <div class="imgsecs-cont">
                                                 <!-- <button class=" boxbtn">View</button> -->
-                                                <button class=" boxbtn1">
-                                                    للإيجار
-                                                </button>
+                                                <button class=" boxbtn1">For Rent</button>
                                             </div>
-
+                                            
                                             <div class="boxtextsec">
-                                                <p class="boctext-1">
-                                                    فلل: الجفنين (فلل مزدوجة)
-                                                </p>
+                                                <p class="boctext-1">Villas: Jafnayn(Twin Villas)</p>
                                                 <!-- <p class="boctext-2">lorem</p> -->
-                                                <p class="boctext-3">
-                                                    الموقع: الرسيل
-                                                </p>
+                                                <p class="boctext-3">Location: Rusayl</p>
                                                 <hr>
                                                 <div class="flexsec boxflex">
                                                     <div class="flexsec">
@@ -1606,9 +1317,7 @@
                                                     </div>
                                                     <div class="flexsec">
                                                         <i class="fa-solid fa-vector-square"></i>
-                                                        <p class="bdtext">
-                                                            160متر مربع
-                                                        </p>
+                                                        <p class="bdtext">160 Sqm</p>
                                                     </div>
                                                 </div>
 
@@ -1616,39 +1325,30 @@
                                         </div>
                                     </div>
                                 </div>
-
+                              
                             </div>
                         </div>
                         <div class="content" id="loc-1-3">
                             <h2 class="mainhead ">
                                 <strong>
-                                    عبري
+                                    Ibri
                                 </strong>
                             </h2>
                             <div class="row">
                                 <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
                                     <div class="box">
                                         <div class="imgsecs">
-                                            <img src="../imgs/search-properties/villas/ibri/IBRI---AL-JIRAN-COMPLEX.jpg"
-                                                onclick="showContent(12)" class="boximg w-100" alt="" title="" />
+                                            <img src="../imgs/search-properties/villas/ibri/IBRI---AL-JIRAN-COMPLEX.jpg" onclick="showContent(12)" class="boximg w-100" alt="" title="" />
                                             <div class="imgsecs-cont">
-
-                                                <button class=" boxbtn1">
-                                                    للإيجار
-                                                </button>
-                                                <button class=" boxbtn" onclick="showContent(13)">
-                                                    منظر
-                                                </button>
+                                              
+                                                <button class=" boxbtn1">For Rent</button>
+                                                  <button class=" boxbtn" onclick="showContent(13)">View</button>
                                             </div>
-
+                                            
                                             <div class="boxtextsec">
-                                                <p class="boctext-1">
-                                                    فلل: مجمع الجيران (27 فيلا)
-                                                </p>
+                                                <p class="boctext-1">Villas: Al Jiran Complex (27 villas)</p>
                                                 <!-- <p class="boctext-2">lorem</p> -->
-                                                <p class="boctext-3">
-                                                    الموقع: عبري
-                                                </p>
+                                                <p class="boctext-3">Location: Ibri</p>
                                                 <hr>
                                                 <div class="flexsec boxflex">
                                                     <div class="flexsec">
@@ -1661,9 +1361,7 @@
                                                     </div>
                                                     <div class="flexsec">
                                                         <i class="fa-solid fa-vector-square"></i>
-                                                        <p class="bdtext">
-                                                            153متر مربع
-                                                        </p>
+                                                        <p class="bdtext">153 Sqm</p>
                                                     </div>
                                                 </div>
 
@@ -1676,33 +1374,24 @@
                         <div class="content" id="loc-1-4">
                             <h2 class="mainhead ">
                                 <strong>
-                                    نزوى
+                                    Nizwa
                                 </strong>
                             </h2>
                             <div class="row">
                                 <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
                                     <div class="box">
                                         <div class="imgsecs">
-                                            <img src="../imgs/search-properties/villas/nizwa/NIZWA-(AL-JIRAN)-thumbnail_PHOTO-2022-12-29-11-50-46.jpg"
-                                                onclick="showContent(6)" class="boximg w-100" alt="" title="" />
+                                            <img src="../imgs/search-properties/villas/nizwa/NIZWA-(AL-JIRAN)-thumbnail_PHOTO-2022-12-29-11-50-46.jpg" onclick="showContent(6)" class="boximg w-100" alt="" title="" />
                                             <div class="imgsecs-cont">
-
-                                                <button class=" boxbtn1">
-                                                    للإيجار
-                                                </button>
-                                                <button class=" boxbtn" onclick="showContent(6)">
-                                                    منظر
-                                                </button>
+                                              
+                                                <button class=" boxbtn1">For Rent</button>
+                                                <button class=" boxbtn" onclick="showContent(6)">View</button>
                                             </div>
-
+                                            
                                             <div class="boxtextsec">
-                                                <p class="boctext-1">
-                                                    فلل: مجمع الجيران (28 فيلا)
-                                                </p>
+                                                <p class="boctext-1">Villas: Al Jiran Complex(28 villas)</p>
                                                 <!-- <p class="boctext-2">lorem</p> -->
-                                                <p class="boctext-3">
-                                                    الموقع: نزوى
-                                                </p>
+                                                <p class="boctext-3">Location: Nizwa</p>
                                                 <hr>
                                                 <div class="flexsec boxflex">
                                                     <div class="flexsec">
@@ -1715,9 +1404,7 @@
                                                     </div>
                                                     <div class="flexsec">
                                                         <i class="fa-solid fa-vector-square"></i>
-                                                        <p class="bdtext">
-                                                            152متر مربع
-                                                        </p>
+                                                        <p class="bdtext">152 Sqm</p>
                                                     </div>
                                                 </div>
 
@@ -1725,37 +1412,30 @@
                                         </div>
                                     </div>
                                 </div>
-
-
+                              
+                              
                             </div>
                         </div>
                         <div class="content" id="loc-1-5">
                             <h2 class="mainhead ">
                                 <strong>
-                                    الخوض
+                                    Al Khoud
                                 </strong>
                             </h2>
                             <div class="row">
                                 <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
                                     <div class="box">
                                         <div class="imgsecs">
-                                            <img src="../imgs/search-properties/villas/ai-khoud/Al-Salam-complex-Al-Khoud-1.jpg"
-                                                class="boximg w-100" alt="" title="" />
+                                            <img src="../imgs/search-properties/villas/ai-khoud/Al-Salam-complex-Al-Khoud-1.jpg" class="boximg w-100" alt="" title="" />
                                             <div class="imgsecs-cont">
                                                 <!-- <button class=" boxbtn">View</button> -->
-                                                <button class=" boxbtn1">
-                                                    للإيجار
-                                                </button>
+                                                <button class=" boxbtn1">For Rent</button>
                                             </div>
-
+                                            
                                             <div class="boxtextsec">
-                                                <p class="boctext-1">
-                                                    فلل: مجمع السلام
-                                                </p>
+                                                <p class="boctext-1">Villas: Al Salam Complex</p>
                                                 <!-- <p class="boctext-2">lorem</p> -->
-                                                <p class="boctext-3">
-                                                    الموقع: الخوض
-                                                </p>
+                                                <p class="boctext-3">Location:   Al Khoud</p>
                                                 <hr>
                                                 <div class="flexsec boxflex">
                                                     <div class="flexsec">
@@ -1768,9 +1448,7 @@
                                                     </div>
                                                     <div class="flexsec">
                                                         <i class="fa-solid fa-vector-square"></i>
-                                                        <p class="bdtext">
-                                                            290متر مربع
-                                                        </p>
+                                                        <p class="bdtext">290 Sqm</p>
                                                     </div>
                                                 </div>
 
@@ -1781,26 +1459,17 @@
                                 <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
                                     <div class="box">
                                         <div class="imgsecs">
-                                            <img src="../imgs/search-properties/villas/ai-khoud/Al-Jiran-Complex(42-Villas)-(1).jpg"
-                                                onclick="showContent(7)" class="boximg w-100" alt="" title="" />
+                                            <img src="../imgs/search-properties/villas/ai-khoud/Al-Jiran-Complex(42-Villas)-(1).jpg" onclick="showContent(7)" class="boximg w-100" alt="" title="" />
                                             <div class="imgsecs-cont">
-
-                                                <button class=" boxbtn1">
-                                                    للإيجار
-                                                </button>
-                                                <button class=" boxbtn" onclick="showContent(7)">
-                                                    منظر
-                                                </button>
+                                               
+                                                <button class=" boxbtn1">For Rent</button>
+                                                <button class=" boxbtn" onclick="showContent(7)">View</button>
                                             </div>
-
+                                            
                                             <div class="boxtextsec">
-                                                <p class="boctext-1">
-                                                    فلل: مجمع الجيران (42 فيلا)
-                                                </p>
+                                                <p class="boctext-1">Villas: Al Jiran Complex(42 villas)</p>
                                                 <!-- <p class="boctext-2">lorem</p> -->
-                                                <p class="boctext-3">
-                                                    الموقع: الخوض
-                                                </p>
+                                                <p class="boctext-3">Location:   Al Khoud</p>
                                                 <hr>
                                                 <div class="flexsec boxflex">
                                                     <div class="flexsec">
@@ -1813,9 +1482,7 @@
                                                     </div>
                                                     <div class="flexsec">
                                                         <i class="fa-solid fa-vector-square"></i>
-                                                        <p class="bdtext">
-                                                            290متر مربع
-                                                        </p>
+                                                        <p class="bdtext">290 Sqm</p>
                                                     </div>
                                                 </div>
 
@@ -1826,24 +1493,17 @@
                                 <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
                                     <div class="box">
                                         <div class="imgsecs">
-                                            <img src="../imgs/search-properties/villas/ai-khoud/img1.jpg"
-                                                onclick="showContent(10)" class="boximg w-100" alt="" title="" />
+                                            <img src="../imgs/search-properties/villas/ai-khoud/img1.jpg" onclick="showContent(10)" class="boximg w-100" alt="" title="" />
                                             <div class="imgsecs-cont">
-
-                                                <button class=" boxbtn1">
-                                                    للإيجار
-                                                </button>
-                                                <button class=" boxbtn" onclick="showContent(10)">
-                                                    منظر
-                                                </button>
+                                               
+                                                <button class=" boxbtn1">For Rent</button>
+                                                <button class=" boxbtn" onclick="showContent(10)">View</button>
                                             </div>
-
+                                            
                                             <div class="boxtextsec">
-                                                <p class="boctext-1">فلل: مجمع البركات (34 فيلا)</p>
+                                                <p class="boctext-1">Villas: Al Barakhat complex(34 villas)</p>
                                                 <!-- <p class="boctext-2">lorem</p> -->
-                                                <p class="boctext-3">
-                                                    الموقع: الخوض
-                                                </p>
+                                                <p class="boctext-3">Location:   Al Khoud</p>
                                                 <hr>
                                                 <div class="flexsec boxflex">
                                                     <div class="flexsec">
@@ -1856,9 +1516,7 @@
                                                     </div>
                                                     <div class="flexsec">
                                                         <i class="fa-solid fa-vector-square"></i>
-                                                        <p class="bdtext">
-                                                            290متر مربع
-                                                        </p>
+                                                        <p class="bdtext">290 Sqm</p>
                                                     </div>
                                                 </div>
 
@@ -1866,39 +1524,30 @@
                                         </div>
                                     </div>
                                 </div>
-
+                            
                             </div>
                         </div>
                         <div class="content" id="loc-1-6">
                             <h2 class="mainhead ">
                                 <strong>
-                                    الخابورة
+                                    Al Khaburah
                                 </strong>
                             </h2>
                             <div class="row">
                                 <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
                                     <div class="box">
                                         <div class="imgsecs">
-                                            <img src="../imgs/search-properties/villas/al-khabourah/img1.jpg"
-                                                onclick="showContent(8)" class="boximg w-100" alt="" title="" />
+                                            <img src="../imgs/search-properties/villas/al-khabourah/img1.jpg" onclick="showContent(8)" class="boximg w-100" alt="" title="" />
                                             <div class="imgsecs-cont">
-
-                                                <button class=" boxbtn1">
-                                                    للإيجار
-                                                </button>
-                                                <button class=" boxbtn" onclick="showContent(8)">
-                                                    منظر
-                                                </button>
+                                                
+                                                <button class=" boxbtn1">For Rent</button>
+                                                <button class=" boxbtn" onclick="showContent(8)">View</button>
                                             </div>
-
+                                            
                                             <div class="boxtextsec">
-                                                <p class="boctext-1">
-                                                    فلل: مجمع البرزة
-                                                </p>
+                                                <p class="boctext-1">Villas: Al Barzha complex</p>
                                                 <!-- <p class="boctext-2">lorem</p> -->
-                                                <p class="boctext-3">
-                                                    الموقع: الخوض
-                                                </p>
+                                                <p class="boctext-3">Location:   Al Khabourah</p>
                                                 <hr>
                                                 <div class="flexsec boxflex">
                                                     <div class="flexsec">
@@ -1911,9 +1560,7 @@
                                                     </div>
                                                     <div class="flexsec">
                                                         <i class="fa-solid fa-vector-square"></i>
-                                                        <p class="bdtext">
-                                                            173متر مربع
-                                                        </p>
+                                                        <p class="bdtext">173 Sqm</p>
                                                     </div>
                                                 </div>
 
@@ -1921,40 +1568,31 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                                </div>
                         </div>
-
+                  
 
                         <div class="content" id="loc-2-1">
                             <h2 class="mainhead ">
                                 <strong>
-                                    الخابورة
+                                    Al Khabourah
                                 </strong>
                             </h2>
                             <div class="row">
                                 <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
                                     <div class="box">
                                         <div class="imgsecs">
-                                            <img src="../imgs/shops/img1.jpg" onclick="showContent(9)"
-                                                class="boximg w-100" alt="" title="" />
+                                            <img src="../imgs/shops/img1.jpg" onclick="showContent(9)"  class="boximg w-100" alt="" title="" />
                                             <div class="imgsecs-cont">
-
-                                                <button class=" boxbtn1">
-                                                    للإيجار
-                                                </button>
-                                                <button class=" boxbtn" onclick="showContent(9)">
-                                                    منظر
-                                                </button>
+                                               
+                                                <button class=" boxbtn1">For Rent</button>
+                                                 <button class=" boxbtn" onclick="showContent(9)">View</button>
                                             </div>
-
+                                            
                                             <div class="boxtextsec">
-                                                <p class="boctext-1">
-                                                    محلات تجارية: مجمع الحمض
-                                                </p>
+                                                <p class="boctext-1">Shops: Al Hamadh complex</p>
                                                 <!-- <p class="boctext-2"></p> -->
-                                                <p class="boctext-3">
-                                                    الموقع: الخابورة
-                                                </p>
+                                                <p class="boctext-3">Location: Al Khabourah</p>
                                                 <!--<hr>-->
                                                 <!--<div class="flexsec boxflex">-->
                                                 <!--    <div class="flexsec">-->
@@ -1977,26 +1615,17 @@
                                 <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
                                     <div class="box">
                                         <div class="imgsecs">
-                                            <img src="../imgs/search-properties/shops/ai-Khabourah/alba-img1.jpg"
-                                                onclick="showContent(12)" class="boximg w-100" alt="" title="" />
+                                            <img src="../imgs/search-properties/shops/ai-Khabourah/alba-img1.jpg"  onclick="showContent(12)" class="boximg w-100" alt="" title="" />
                                             <div class="imgsecs-cont">
-
-                                                <button class=" boxbtn1">
-                                                    للإيجار
-                                                </button>
-                                                <button class=" boxbtn" onclick="showContent(12)">
-                                                    منظر
-                                                </button>
+                                                
+                                                <button class=" boxbtn1">For Rent</button>
+                                                  <button class=" boxbtn" onclick="showContent(12)">View</button>
                                             </div>
-
+                                            
                                             <div class="boxtextsec">
-                                                <p class="boctext-1">
-                                                    محلات تجارية: مجمع سوق البرزة
-                                                </p>
+                                                <p class="boctext-1">Shops: AL Barzah Souq Complex</p>
                                                 <!-- <p class="boctext-2"></p> -->
-                                                <p class="boctext-3">
-                                                    الموقع: الخابورة
-                                                </p>
+                                                <p class="boctext-3">Location: Al Khabourah</p>
                                                 <!--<hr>-->
                                                 <!--<div class="flexsec boxflex">-->
                                                 <!--    <div class="flexsec">-->
@@ -2016,16 +1645,15 @@
                                         </div>
                                     </div>
                                 </div>
-
-
+                    
+                              
                             </div>
                         </div>
                         <div class="content" id="loc-2-2">
-                            <h2 class="mainhead ">
-                                <strong>
-                                    الخابورة
-
-                                </strong>
+                             <h2 class="mainhead ">
+                            <strong>
+                               Al Khabourah
+                            </strong>
                             </h2>
                             <center>
                                 <h2 class=" mb-5 pb-5">
@@ -2034,10 +1662,10 @@
                             </center>
                         </div>
                         <div class="content" id="loc-2-3">
-                            <h2 class="mainhead ">
-                                <strong>
-                                    Ibra
-                                </strong>
+                             <h2 class="mainhead ">
+                            <strong>
+                                Ibra
+                            </strong>
                             </h2>
                             <center>
                                 <h2 class=" mb-5 pb-5">
@@ -2046,10 +1674,10 @@
                             </center>
                         </div>
                         <div class="content" id="loc-2-4">
-                            <h2 class="mainhead ">
-                                <strong>
-                                    Hamrya
-                                </strong>
+                             <h2 class="mainhead ">
+                            <strong>
+                                Hamrya
+                            </strong>
                             </h2>
                             <center>
                                 <h2 class=" mb-5 pb-5">
@@ -2057,12 +1685,12 @@
                                 </h2>
                             </center>
                         </div>
-
+                     
                         <div class="content" id="loc-3-1">
-                            <h2 class="mainhead ">
-                                <strong>
-                                    غلا
-                                </strong>
+                             <h2 class="mainhead ">
+                            <strong>
+                                Ghala
+                            </strong>
                             </h2>
                             <center>
                                 <h2 class=" mb-5 pb-5">
@@ -2071,10 +1699,10 @@
                             </center>
                         </div>
                         <div class="content" id="loc-3-2">
-                            <h2 class="mainhead ">
-                                <strong>
-                                    Mabela
-                                </strong>
+                             <h2 class="mainhead ">
+                            <strong>
+                                Mabela
+                            </strong>
                             </h2>
                             <center>
                                 <h2 class=" mb-5 pb-5">
@@ -2082,7 +1710,7 @@
                                 </h2>
                             </center>
                         </div>
-
+                       
                     </div>
                 </div>
 
@@ -2090,698 +1718,664 @@
 
 
 
-            <div class="container" data-aos="zoom-in" data-aos-delay="50" data-aos-offset="0" data-aos-duration="1000"
-                data-aos-easing="linear" data-aos-once="false">
-                <div id="content1" class="contents">
-
-                    <h2 class="mainhead mb-5">
-                        مجمع الزمام
-                    </h2>
-                    <div class="row">
-                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
-                            <img src="../imgs/search-properties/apartments/mq/Al-Zimam-complex4.jpg"
-                                class="img1-1 w-100" />
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
-                            <img src="../imgs/search-properties/apartments/mq/Al-Zimam-complex1.jpg"
-                                class="img1-1 w-100" />
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
-                            <img src="../imgs/search-properties/apartments/mq/Al-Zimam-complex2.jpg"
-                                class="img1-1 w-100" />
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
-                            <img src="../imgs/search-properties/apartments/mq/Al-Zimam-complex3.jpg"
-                                class="img1-1 w-100" />
-                        </div>
-
-
+         <div class="container" data-aos="zoom-in" data-aos-delay="50" data-aos-offset="0"
+         data-aos-duration="1000" data-aos-easing="linear" data-aos-once="false">
+            <div id="content1" class="contents">
+               
+                <h2 class="mainhead mb-5">
+                    Al Zimam Complex
+                </h2>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
+                        <img src="../imgs/search-properties/apartments/mq/Al-Zimam-complex4.jpg" class="img1-1 w-100"/>
+                    </div>
+                      <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
+                        <img src="../imgs/search-properties/apartments/mq/Al-Zimam-complex1.jpg" class="img1-1 w-100"/>
+                    </div>
+                     <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
+                        <img src="../imgs/search-properties/apartments/mq/Al-Zimam-complex2.jpg" class="img1-1 w-100"/>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
+                        <img src="../imgs/search-properties/apartments/mq/Al-Zimam-complex3.jpg" class="img1-1 w-100"/>
+                    </div>
+                    
+                    
+                  
+                </div>
+           
+             </div>
+            <div id="content2" class="contents">
+               
+                <h2 class="mainhead mb-5">
+                    Ghala Tower
+                </h2>
+                <div class="row">
+                      <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
+                        <img src="../imgs/search-properties/apartments/ghala/Bedroom.jpg" class="img1-1 w-100"/>
+                    </div>
+                     <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
+                        <img src="../imgs/search-properties/apartments/ghala/Kitchen-1.jpg" class="img1-1 w-100"/>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
+                        <img src="../imgs/search-properties/apartments/ghala/Kitchen-2.jpg" class="img1-1 w-100"/>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
+                        <img src="../imgs/search-properties/apartments/ghala/Bathroom-2.jpg" class="img1-1 w-100"/>
 
                     </div>
+                  
+                   
 
                 </div>
-                <div id="content2" class="contents">
-
-                    <h2 class="mainhead mb-5">
-                        غلا
-                    </h2>
-                    <div class="row">
-                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
-                            <img src="../imgs/search-properties/apartments/ghala/Bedroom.jpg" class="img1-1 w-100" />
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
-                            <img src="../imgs/search-properties/apartments/ghala/Kitchen-1.jpg" class="img1-1 w-100" />
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
-                            <img src="../imgs/search-properties/apartments/ghala/Kitchen-2.jpg" class="img1-1 w-100" />
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
-                            <img src="../imgs/search-properties/apartments/ghala/Bathroom-2.jpg" class="img1-1 w-100" />
-
-                        </div>
-
-
-
-                    </div>
-
-                </div>
-                <div id="content3" class="contents">
-
-                    <!-- <div class="close" align="right" >
+           
+             </div>
+             <div id="content3" class="contents">
+               
+                <!-- <div class="close" align="right" >
                     <p >X</p>
                 </div> -->
-                    <h2 class="mainhead mb-5">
-                        وادي عدي
-                    </h2>
-                    <div class="row">
-
-                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
-                            <img src="../imgs/search-properties/apartments/wa/img1.jpg" class="img1-1 w-100" />
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
-                            <img src="../imgs/search-properties/apartments/wa/Kitchen.jpg" class="img1-1 w-100" />
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
-                            <img src="../imgs/search-properties/apartments/mq/Al-Zimam-complex3.jpg"
-                                class="img1-1 w-100" />
-                        </div>
-
+                <h2 class="mainhead mb-5">
+                    Wadi Adai
+                </h2>
+                <div class="row">
+                    
+                      <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
+                        <img src="../imgs/search-properties/apartments/wa/img1.jpg" class="img1-1 w-100"/>
                     </div>
-
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
+                        <img src="../imgs/search-properties/apartments/wa/Kitchen.jpg" class="img1-1 w-100"/>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
+                         <img src="../imgs/search-properties/apartments/mq/Al-Zimam-complex3.jpg" class="img1-1 w-100"/>
+                   </div>
+                  
                 </div>
-                <div id="content4" class="contents">
-
-                    <!-- <div class="close" align="right" >
+           
+             </div>
+             <div id="content4" class="contents">
+               
+                <!-- <div class="close" align="right" >
                     <p >X</p>
                 </div> -->
-                    <h2 class="mainhead mb-5">
-                        روي
-                    </h2>
-                    <div class="row">
-
-                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
-                            <img src="../imgs/search-properties/apartments/ruwi/Hall.jpg" class="img1-1 w-100" />
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
-                            <img src="../imgs/search-properties/apartments/ruwi/Bedroom.jpg" class="img1-1 w-100" />
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
-                            <img src="../imgs/search-properties/apartments/ruwi/Kitchen-work-area.jpg"
-                                class="img1-1 w-100" />
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
-                            <img src="../imgs/search-properties/apartments/ruwi/kitchen-1.jpg" class="img1-1 w-100" />
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
-                            <img src="../imgs/search-properties/apartments/ruwi/bathroom.jpg" class="img1-1 w-100" />
-                        </div>
-
+                <h2 class="mainhead mb-5">
+                    Ruwi
+                </h2>
+                <div class="row">
+                    
+                      <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
+                        <img src="../imgs/search-properties/apartments/ruwi/Hall.jpg" class="img1-1 w-100"/>
                     </div>
-
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
+                        <img src="../imgs/search-properties/apartments/ruwi/Bedroom.jpg" class="img1-1 w-100"/>
+                    </div>
+                     <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
+                        <img src="../imgs/search-properties/apartments/ruwi/Kitchen-work-area.jpg" class="img1-1 w-100"/>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
+                        <img src="../imgs/search-properties/apartments/ruwi/kitchen-1.jpg" class="img1-1 w-100"/>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
+                        <img src="../imgs/search-properties/apartments/ruwi/bathroom.jpg" class="img1-1 w-100"/>
+                    </div>
+                    
                 </div>
-                <div id="content5" class="contents">
-
-                    <!-- <div class="close" align="right" >
+           
+             </div>
+             <div id="content5" class="contents">
+               
+                <!-- <div class="close" align="right" >
                     <p >X</p>
                 </div> -->
-                    <h2 class="mainhead mb-5">
-                        القرم
-                    </h2>
-                    <div class="row">
-
-                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
-                            <img src="../imgs/search-properties/villas/qurum/1-2.jpg" class="img1-1 w-100" />
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
-                            <img src="../imgs/search-properties/villas/qurum/1-3.jpg" class="img1-1 w-100" />
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
-                            <img src="../imgs/search-properties/villas/qurum/2-4.jpg" class="img1-1 w-100" />
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
-                            <img src="../imgs/search-properties/villas/qurum/4-2.jpg" class="img1-1 w-100" />
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
-                            <img src="../imgs/search-properties/villas/qurum/4-3.jpg" class="img1-1 w-100" />
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
-                            <img src="../imgs/search-properties/villas/qurum/2-1.jpg" class="img1-1 w-100" />
-                        </div>
-                        <!--<div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">-->
-                        <!--   <img src="../imgs/search-properties/villas/qurum/2-2.jpg" class="img1-1 w-100"/>-->
-                        <!--</div>-->
-                        <!--<div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">-->
-                        <!--    <img src="../imgs/search-properties/villas/qurum/2-3.jpg" class="img1-1 w-100"/>-->
-                        <!--</div>-->
-                        <!--<div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">-->
-                        <!--    <img src="../imgs/search-properties/villas/qurum/4-1.jpg" class="img1-1 w-100"/>-->
+                <h2 class="mainhead mb-5">
+                    Qurum
+                </h2>
+                <div class="row">
+                    
+                      <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
+                        <img src="../imgs/search-properties/villas/qurum/1-2.jpg" class="img1-1 w-100"/>
+                    </div>
+                     <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
+                        <img src="../imgs/search-properties/villas/qurum/1-3.jpg" class="img1-1 w-100"/>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
+                        <img src="../imgs/search-properties/villas/qurum/2-4.jpg" class="img1-1 w-100"/>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
+                        <img src="../imgs/search-properties/villas/qurum/4-2.jpg" class="img1-1 w-100"/>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
+                        <img src="../imgs/search-properties/villas/qurum/4-3.jpg" class="img1-1 w-100"/>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
+                        <img src="../imgs/search-properties/villas/qurum/2-1.jpg" class="img1-1 w-100"/>
+                    </div>
+                    <!--<div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">-->
+                    <!--   <img src="../imgs/search-properties/villas/qurum/2-2.jpg" class="img1-1 w-100"/>-->
+                    <!--</div>-->
+                    <!--<div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">-->
+                    <!--    <img src="../imgs/search-properties/villas/qurum/2-3.jpg" class="img1-1 w-100"/>-->
+                    <!--</div>-->
+                    <!--<div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">-->
+                    <!--    <img src="../imgs/search-properties/villas/qurum/4-1.jpg" class="img1-1 w-100"/>-->
                     </div>
                 </div>
                 <div id="content6" class="contents">
-
-                    <!-- <div class="close" align="right" >
+               
+                <!-- <div class="close" align="right" >
                     <p >X</p>
                 </div> -->
-                    <h2 class="mainhead mb-5">
-                        مجمع الجيران (28 فيلا)
-                    </h2>
-                    <div class="row">
-                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
-                            <img src="../imgs/search-properties/villas/nizwa/4n.jpg" class="img1-1 w-100" />
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
-                            <img src="../imgs/search-properties/villas/nizwa/img3.jpg" class="img1-1 w-100" />
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
-                            <img src="../imgs/search-properties/villas/nizwa/2n.jpg" class="img1-1 w-100" />
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
-                            <img src="../imgs/search-properties/villas/nizwa/img6.jpg" class="img1-1 w-100" />
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
-                            <img src="../imgs/search-properties/villas/nizwa/img1.jpg" class="img1-1 w-100" />
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
-                            <img src="../imgs/search-properties/villas/nizwa/img4.jpg" class="img1-1 w-100" />
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
-                            <img src="../imgs/search-properties/villas/nizwa/img5.jpg" class="img1-1 w-100" />
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
-                            <img src="../imgs/search-properties/villas/nizwa/img2.jpg" class="img1-1 w-100" />
-                        </div>
+                <h2 class="mainhead mb-5">
+                    Al Jiran Complex(28 villas)
+                </h2>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
+                        <img src="../imgs/search-properties/villas/nizwa/4n.jpg" class="img1-1 w-100"/>
+                     </div>
+                     <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
+                        <img src="../imgs/search-properties/villas/nizwa/img3.jpg" class="img1-1 w-100"/>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
+                        <img src="../imgs/search-properties/villas/nizwa/2n.jpg" class="img1-1 w-100"/>
+                     </div>
+                     <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
+                        <img src="../imgs/search-properties/villas/nizwa/img6.jpg" class="img1-1 w-100"/>
+                    </div>
+                      <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
+                        <img src="../imgs/search-properties/villas/nizwa/img1.jpg" class="img1-1 w-100"/>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
+                        <img src="../imgs/search-properties/villas/nizwa/img4.jpg" class="img1-1 w-100"/>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
+                        <img src="../imgs/search-properties/villas/nizwa/img5.jpg" class="img1-1 w-100"/>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
+                        <img src="../imgs/search-properties/villas/nizwa/img2.jpg" class="img1-1 w-100"/>
+                    </div>
+                  
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
+                       <img src="../imgs/search-properties/villas/nizwa/img7.jpg" class="img1-1 w-100"/>
+                    </div>
+                </div>
+           
+             </div>
+             <div id="content7" class="contents">
+               
+                <!-- <div class="close" align="right" >
+                    <p >X</p>
+                </div> -->
+                <h2 class="mainhead mb-5">
+                    Al Jiran Complex(42 villas)
+                </h2>
+                <div class="row">
 
-                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
-                            <img src="../imgs/search-properties/villas/nizwa/img7.jpg" class="img1-1 w-100" />
-                        </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
+                        <img src="../imgs/search-properties/villas/ai-khoud/Villa-Entrance.jpg" class="img1-1 w-100"/>
+                     </div>
+                    
+                      <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
+                        <img src="../imgs/search-properties/villas/ai-khoud/Living-Room-1.jpg" class="img1-1 w-100"/>
+                    </div>
+                  
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
+                        <img src="../imgs/search-properties/villas/ai-khoud/Living-Room-2.jpg" class="img1-1 w-100"/>
                     </div>
 
-                </div>
-                <div id="content7" class="contents">
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
+                        <img src="../imgs/search-properties/villas/ai-khoud/Kitchen-3.jpg" class="img1-1 w-100"/>
+                    </div>
 
-                    <!-- <div class="close" align="right" >
-                    <p >X</p>
-                </div> -->
-                    <h2 class="mainhead mb-5">
-                        مجمع الجيران (42 فيلا)
-                    </h2>
-                    <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
+                        <img src="../imgs/search-properties/villas/ai-khoud/BathRoom.jpg" class="img1-1 w-100"/>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
+                        <img src="../imgs/search-properties/villas/ai-khoud/Bathroom-2.jpg" class="img1-1 w-100"/>
+                    </div>
 
-                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
-                            <img src="../imgs/search-properties/villas/ai-khoud/Villa-Entrance.jpg"
-                                class="img1-1 w-100" />
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
-                            <img src="../imgs/search-properties/villas/ai-khoud/Living-Room-1.jpg"
-                                class="img1-1 w-100" />
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
-                            <img src="../imgs/search-properties/villas/ai-khoud/Living-Room-2.jpg"
-                                class="img1-1 w-100" />
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
-                            <img src="../imgs/search-properties/villas/ai-khoud/Kitchen-3.jpg" class="img1-1 w-100" />
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
-                            <img src="../imgs/search-properties/villas/ai-khoud/BathRoom.jpg" class="img1-1 w-100" />
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
-                            <img src="../imgs/search-properties/villas/ai-khoud/Bathroom-2.jpg" class="img1-1 w-100" />
-                        </div>
-
-                        <!-- <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
+                    <!-- <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
                         <img src="../imgs/search-properties/villas/ai-khoud/Living-Room-3.jpg" class="img1-1 w-100"/>
                     </div> -->
-                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
-                            <img src="../imgs/search-properties/villas/ai-khoud/Swimming-Pool-1.jpg"
-                                class="img1-1 w-100" />
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
-                            <img src="../imgs/search-properties/villas/ai-khoud/Playing-Court.jpg"
-                                class="img1-1 w-100" />
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
-                            <img src="../imgs/search-properties/villas/ai-khoud/Complex-Compound-1.jpg"
-                                class="img1-1 w-100" />
-                        </div>
-
-                        <!-- <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
+                        <img src="../imgs/search-properties/villas/ai-khoud/Swimming-Pool-1.jpg" class="img1-1 w-100"/>
+                     </div>
+                     <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
+                        <img src="../imgs/search-properties/villas/ai-khoud/Playing-Court.jpg" class="img1-1 w-100"/>
+                     </div>
+                     <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
+                        <img src="../imgs/search-properties/villas/ai-khoud/Complex-Compound-1.jpg" class="img1-1 w-100"/>
+                     </div>
+                  
+                    <!-- <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
                         <img src="../imgs/search-properties/villas/ai-khoud/Bathroom-1.jpg" class="img1-1 w-100"/>
                     </div> -->
-                        <!-- <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
+                    <!-- <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
                         <img src="../imgs/search-properties/villas/ai-khoud/Bathroom-2.jpg" class="img1-1 w-100"/>
                     </div> -->
-
-
-
-
-                        <!-- <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
+                  
+                   
+                    
+                 
+                     <!-- <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
                         <img src="../imgs/search-properties/villas/ai-khoud/Complex-Compound-2.jpg" class="img1-1 w-100"/>
                      </div> -->
-
-                    </div>
-
+                   
                 </div>
-                <div id="content8" class="contents">
-
-                    <!-- <div class="close" align="right" >
+           
+             </div>
+             <div id="content8" class="contents">
+               
+                <!-- <div class="close" align="right" >
                     <p >X</p>
                 </div> -->
-                    <h2 class="mainhead mb-5">
-                        مجمع البرزة
-                    </h2>
-                    <div class="row">
-
-                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
-                            <img src="../imgs/search-properties/villas/al-khabourah/img2.jpg" class="img1-1 w-100" />
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
-                            <img src="../imgs/search-properties/villas/al-khabourah/img3.jpg" class="img1-1 w-100" />
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
-                            <img src="../imgs/search-properties/villas/al-khabourah/img4.jpg" class="img1-1 w-100" />
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
-                            <img src="../imgs/search-properties/villas/al-khabourah/img5.jpg" class="img1-1 w-100" />
-                        </div>
-
-
-
-                    </div>
-
-                </div>
-
-                <div id="content9" class="contents">
-
-                    <!-- <div class="close" align="right" >
-                    <p >X</p>
-                </div> -->
-                    <h2 class="mainhead mb-5">
-                        مجمع الحمض
-                    </h2>
-                    <div class="row">
-
-                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
-                            <img src="../imgs/search-properties/shops/ai-Khabourah/img1.jpg" class="img1-1 w-100" />
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
-                            <img src="../imgs/search-properties/shops/ai-Khabourah/img2.jpg" class="img1-1 w-100" />
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
-                            <img src="../imgs/search-properties/shops/ai-Khabourah/img3.jpg" class="img1-1 w-100" />
-                        </div>
-
-
-
-                    </div>
-
-                </div>
-                <div id="content10" class="contents">
-
-                    <!-- <div class="close" align="right" >
-                    <p >X</p>
-                </div> -->
-                    <h2 class="mainhead mb-5">
-                        مجمع البركات (34 فيلا)
-                    </h2>
-                    <div class="row">
-
-                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
-                            <img src="../imgs/search-properties/villas/ai-khoud/img2.jpg" class="img1-1 w-100" />
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
-                            <img src="../imgs/search-properties/villas/ai-khoud/img3.jpg" class="img1-1 w-100" />
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
-                            <img src="../imgs/search-properties/villas/ai-khoud/img4.jpg" class="img1-1 w-100" />
-                        </div>
-
-
-
-                    </div>
-
-                </div>
-                <div id="content11" class="contents">
-
-                    <!-- <div class="close" align="right" >
-                    <p >X</p>
-                </div> -->
-                    <h2 class="mainhead mb-5">
-                        الحمرية
-                    </h2>
-                    <div class="row">
-
-                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
-                            <img src="../imgs/search-properties/apartments/humriya/img1.jpg" class="img1-1 w-100" />
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
-                            <img src="../imgs/search-properties/apartments/humriya/img2.jpg" class="img1-1 w-100" />
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
-                            <img src="../imgs/search-properties/apartments/humriya/img3.jpg" class="img1-1 w-100" />
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
-                            <img src="../imgs/search-properties/apartments/humriya/img4.jpg" class="img1-1 w-100" />
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
-                            <img src="../imgs/search-properties/apartments/humriya/img5.jpg" class="img1-1 w-100" />
-                        </div>
-
-                    </div>
-
-                </div>
-                <div id="content12" class="contents">
-
-                    <!-- <div class="close" align="right" >
-                    <p >X</p>
-                </div> -->
-                    <h2 class="mainhead mb-5">
-                        مجمع سوق البرزة
-                    </h2>
-                    <div class="row">
-
-                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
-                            <img src="../imgs/search-properties/shops/ai-Khabourah/alba-img2.jpg"
-                                class="img1-1 w-100" />
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
-                            <img src="../imgs/search-properties/shops/ai-Khabourah/alba-img3.jpg"
-                                class="img1-1 w-100" />
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
-                            <img src="../imgs/search-properties/shops/ai-Khabourah/alba-img4.jpg"
-                                class="img1-1 w-100" />
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
-                            <img src="../imgs/search-properties/shops/ai-Khabourah/alba-img5.jpg"
-                                class="img1-1 w-100" />
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
-                            <img src="../imgs/search-properties/shops/ai-Khabourah/alba-img6.jpg"
-                                class="img1-1 w-100" />
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
-                            <img src="../imgs/search-properties/shops/ai-Khabourah/alba-img7.jpg"
-                                class="img1-1 w-100" />
-                        </div>
-                    </div>
-
-
-
-                </div>
-                <div id="content13" class="contents">
-
-                    <!-- <div class="close" align="right" >
-                    <p >X</p>
-                </div> -->
-                    <h2 class="mainhead mb-5">
-                        مجمع الجيران (27 فيلا)
-                    </h2>
-                    <div class="row">
-
-                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
-                            <img src="../imgs/search-properties/villas/ibri/IBRI-(AL-JIRAN)_PHOTO-2022-11-22-14-05-33.jpg"
-                                class="img1-1 w-100" />
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div id="content14" class="contents">
-
-                    <!-- <div class="close" align="right" >
-                    <p >X</p>
-                </div> -->
-                    <h2 class="mainhead mb-5">
-                        مجمع مَجَان
-                    </h2>
-                    <div class="row">
-
-                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
-                            <img src="../imgs/search-properties/apartments/bawsher/imgs/img1.jpg"
-                                class="img1-1 w-100" />
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
-                            <img src="../imgs/search-properties/apartments/bawsher/imgs/img2.jpg"
-                                class="img1-1 w-100" />
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
-                            <img src="../imgs/search-properties/apartments/bawsher/imgs/img3.jpg"
-                                class="img1-1 w-100" />
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
-                            <img src="../imgs/search-properties/apartments/bawsher/imgs/img4.jpg"
-                                class="img1-1 w-100" />
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
-                            <img src="../imgs/search-properties/apartments/bawsher/imgs/img5.jpg"
-                                class="img1-1 w-100" />
-                        </div>
-                    </div>
-
-
-
-                </div>
-
-            </div>
-
-
-        </div>
-
-
-
-        <div class="container">
-            <div class="foot_topsec bootomsec">
+                <h2 class="mainhead mb-5">
+                    Al Barzha Complex
+                </h2>
                 <div class="row">
-                    <div class="col-lg-8 col-md-7 col-sm-12 col-12 boxsec-2">
-                        <h2 class="text-light mainhead">
-                            <strong>
-
-                                رحلتك العقارية تبدأ معنا
-
-                            </strong>
-                        </h2>
-                        <p class="text-light">
-                            <b>
-
-                                لدينا للإيجار ( محلات تجارية - مباني سكنية - فلل السكنية )
-                                الخبرة فى الأناقة مع روح التصميم العصري، وراحة تدوم، في مساحات مصممة لتمنحك تجربة
-                                سكنية فاخرة بمعايير حديثة.
-                            </b>
-                        </p>
+                    
+                      <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
+                        <img src="../imgs/search-properties/villas/al-khabourah/img2.jpg" class="img1-1 w-100"/>
                     </div>
-                    <div class="col-lg-4 col-md-5 col-sm-12 col-12 boxsec-1">
-                        <div class="boxbgsec">
-                            <a href="search-properties/">
-                                <button class="btn exbtn text-light">
-                                    اكتشف خياراتك العقارية
+                  
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
+                        <img src="../imgs/search-properties/villas/al-khabourah/img3.jpg" class="img1-1 w-100"/>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
+                        <img src="../imgs/search-properties/villas/al-khabourah/img4.jpg" class="img1-1 w-100"/>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
+                        <img src="../imgs/search-properties/villas/al-khabourah/img5.jpg" class="img1-1 w-100"/>
+                    </div>
+                    
+                 
+                   
+                </div>
+           
+             </div>
 
-                                </button>
-                            </a>
-                        </div>
+             <div id="content9" class="contents">
+               
+                <!-- <div class="close" align="right" >
+                    <p >X</p>
+                </div> -->
+                <h2 class="mainhead mb-5">
+                    Al Hamadh Complex
+                </h2>
+                <div class="row">
+                    
+                      <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
+                        <img src="../imgs/search-properties/shops/ai-Khabourah/img1.jpg" class="img1-1 w-100"/>
+                    </div>
+                  
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
+                        <img src="../imgs/search-properties/shops/ai-Khabourah/img2.jpg" class="img1-1 w-100"/>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
+                        <img src="../imgs/search-properties/shops/ai-Khabourah/img3.jpg" class="img1-1 w-100"/>
+                    </div>
+                
+                 
+                   
+                </div>
+           
+             </div>
+             <div id="content10" class="contents">
+               
+                <!-- <div class="close" align="right" >
+                    <p >X</p>
+                </div> -->
+                <h2 class="mainhead mb-5">
+                    Al Barakhat complex(34 villas)
+                </h2>
+                <div class="row">
+                    
+                      <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
+                        <img src="../imgs/search-properties/villas/ai-khoud/img2.jpg" class="img1-1 w-100"/>
+                    </div>
+                  
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
+                        <img src="../imgs/search-properties/villas/ai-khoud/img3.jpg" class="img1-1 w-100"/>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
+                        <img src="../imgs/search-properties/villas/ai-khoud/img4.jpg" class="img1-1 w-100"/>
+                    </div>
+                
+                 
+                   
+                </div>
+           
+             </div>
+             <div id="content11" class="contents">
+               
+                <!-- <div class="close" align="right" >
+                    <p >X</p>
+                </div> -->
+                <h2 class="mainhead mb-5">
+                    Hamriya
+                </h2>
+                <div class="row">
+                    
+                      <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
+                        <img src="../imgs/search-properties/apartments/humriya/img1.jpg" class="img1-1 w-100"/>
+                    </div>
+                  
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
+                        <img src="../imgs/search-properties/apartments/humriya/img2.jpg" class="img1-1 w-100"/>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
+                        <img src="../imgs/search-properties/apartments/humriya/img3.jpg" class="img1-1 w-100"/>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
+                        <img src="../imgs/search-properties/apartments/humriya/img4.jpg" class="img1-1 w-100"/>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
+                        <img src="../imgs/search-properties/apartments/humriya/img5.jpg" class="img1-1 w-100"/>
+                    </div>
+                   
+                </div>
+           
+             </div>
+             <div id="content12" class="contents">
+               
+                <!-- <div class="close" align="right" >
+                    <p >X</p>
+                </div> -->
+                <h2 class="mainhead mb-5">
+                    AL Barzah Souq Complex
+                </h2>
+                <div class="row">
+                    
+                      <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
+                        <img src="../imgs/search-properties/shops/ai-Khabourah/alba-img2.jpg" class="img1-1 w-100"/>
+                    </div>
+                  
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
+                        <img src="../imgs/search-properties/shops/ai-Khabourah/alba-img3.jpg" class="img1-1 w-100"/>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
+                        <img src="../imgs/search-properties/shops/ai-Khabourah/alba-img4.jpg" class="img1-1 w-100"/>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
+                        <img src="../imgs/search-properties/shops/ai-Khabourah/alba-img5.jpg" class="img1-1 w-100"/>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
+                        <img src="../imgs/search-properties/shops/ai-Khabourah/alba-img6.jpg" class="img1-1 w-100"/>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
+                        <img src="../imgs/search-properties/shops/ai-Khabourah/alba-img7.jpg" class="img1-1 w-100"/>
                     </div>
                 </div>
-            </div>
-        </div>
+                
+                
+           
+             </div>
+              <div id="content13" class="contents">
+               
+                <!-- <div class="close" align="right" >
+                    <p >X</p>
+                </div> -->
+                <h2 class="mainhead mb-5">
+                   Al Jiran Complex (27 villas)
+                </h2>
+                <div class="row">
+                    
+                      <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
+                        <img src="../imgs/search-properties/villas/ibri/IBRI-(AL-JIRAN)_PHOTO-2022-11-22-14-05-33.jpg" class="img1-1 w-100"/>
+                    </div>
+                  
+                </div>
+           
+             </div>
+
+             <div id="content14" class="contents">
+               
+                <!-- <div class="close" align="right" >
+                    <p >X</p>
+                </div> -->
+                <h2 class="mainhead mb-5">
+                    Majan-complex
+                </h2>
+                <div class="row">
+                    
+                      <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
+                        <img src="../imgs/search-properties/apartments/bawsher/imgs/img1.jpg" class="img1-1 w-100"/>
+                    </div>
+                  
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
+                        <img src="../imgs/search-properties/apartments/bawsher/imgs/img2.jpg" class="img1-1 w-100"/>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
+                        <img src="../imgs/search-properties/apartments/bawsher/imgs/img3.jpg" class="img1-1 w-100"/>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
+                        <img src="../imgs/search-properties/apartments/bawsher/imgs/img4.jpg" class="img1-1 w-100"/>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
+                        <img src="../imgs/search-properties/apartments/bawsher/imgs/img5.jpg" class="img1-1 w-100"/>
+                    </div>
+                </div>
+                
+                
+           
+             </div>
+           
+             </div>
+             
+            
+         </div>
 
 
+         
 
-
-        <footer>
-            <div class="footersec">
-                <div class="container">
+          <div class="container">
+                <div class="foot_topsec bootomsec">
                     <div class="row">
-                        <div class="col-lg-5 col-md-4 col-sm-12">
-                            <img src="../imgs/footlogo.png" class=" logoimg w-100 mb-4" alt="" title="" />
-                            <p class="mb-0">
-                                نقدّم عقارات سكنية وتجارية للإيجار في مختلف أنحاء سلطنة عمان، مع التزام راسخ
-                                بالتميّز وخدمة ترتكز على احتياجات العميل، مما يجعلنا الخيار المفضل لمن يبحث عن
-                                الجودة والراحة والمصداقية.
+                        <div class="col-lg-8 col-md-7 col-sm-12 col-12 boxsec-2">
+                            <h2 class="text-light mainhead">
+                                <strong>
+                                    From commercial to  residential your property journey starts  here
+                                </strong>
+                            </h2>
+                            <p class="text-light">
+                                <b>
+                                    Experience Unparalleled elegance, modern design, and timeless comfort in a space that redefines luxury living.
+                                </b>
                             </p>
                         </div>
-                        <div class="col-lg-2 col-md-3 col-sm-12 col-12">
-                            <dl class="useful-link">
-                                <dt>
-                                    <p class="footgettouchtext">
-                                        روابط مفيدة
-                                    </p>
-                                </dt>
-                                <dd>
-                                    <p class="abouttext ">
-
-                                        <a href="../" class="text-light">
-                                            الصفحة الرئيسية
-                                        </a>
-                                    </p>
-                                </dd>
-                                <dd>
-                                    <p class="abouttext ">
-                                        <a href="../about-us/" class="text-light">
-                                            من نحن
-                                        </a>
-                                    </p>
-                                </dd>
-                                <dd>
-                                    <p class="abouttext ">
-
-                                        <a href="../search-properties/" class="text-light">
-                                            إبحث عن وحدتك العقارية
-                                        </a>
-                                    </p>
-                                </dd>
-                                <dd>
-                                    <p class="abouttext ">
-                                        <a href="../contact-us/" class="text-light">
-                                            عن دار الصفوة
-                                        </a>
-                                    </p>
-                                </dd>
-                            </dl>
+                        <div class="col-lg-4 col-md-5 col-sm-12 col-12 boxsec-1">
+                            <div class="boxbgsec">
+<a href="search-properties/">
+    <button class="btn exbtn text-light">Explore Properties</button>
+</a>
+                            </div>
                         </div>
-                        <div class="col-lg-5 col-md-5 col-sm-12 col-12">
-                            <div class="footgettouch">
-                                <dl>
+                    </div>
+                </div>
+            </div>
+
+
+          
+
+
+
+            <footer>
+                <div class="footersec">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-5 col-md-4 col-sm-12">
+                                <img src="../imgs/footlogo.png" class=" logoimg w-100 mb-4" alt="" title="" />
+                                <p>
+                                    We provide top-tier residential and commercial
+                                    rentals throughout Oman, setting the standard
+                                    with our client focused service and unwavering
+                                    commitment to excellence.
+                                </p>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-12 col-12">
+                                <dl class="useful-link">
                                     <dt>
-                                        <p class="footgettouchtext">
-                                            للتواصل
-
-                                        </p>
+                                        <p class="footgettouchtext">Useful Links</p>
                                     </dt>
-                                    <div class="flexsec1">
-                                        <div class="iconbg">
-                                            <i class="fa-solid fa-location-dot"></i>
-                                        </div>
-                                        <p class="footloctext footloc-text">
-                                            صندوق بريد 371، الرمز البريدي 114، مطرح، سلطنة عُمان
+                                    <dd>
+                                        <p class="abouttext ">
+        
+                                          <a href="../" class="text-light">
+                                            Home
+                                          </a>
                                         </p>
-                                    </div>
-                                    <div class="flexsec1">
-                                        <div class="iconbg">
-                                            <i class="fa-solid fa-phone"></i>
-                                        </div>
-                                        <p class="footloctext numbersec">
-                                            Mob: +968 99356393,
-
-                                            <span class="number1">+968 99358724</span>,
-
-                                            <span class="number2">+968 92021180</span>,
-                                            <span class="number3">+968 92430369</span>
-                                            <br>
-                                            Tel: +968 24791680 ext 109, <br> Fax +968 24791685
+                                    </dd>
+                                    <dd>
+                                        <p class="abouttext ">
+                                            <a href="../about-us/" class="text-light">
+        
+                                            About Us
+                                            </a>
                                         </p>
-                                    </div>
-                                    <div class="flexsec1">
-                                        <div class="iconbg">
-                                            <i class="fa-solid fa-envelope"></i>
-                                        </div>
-                                        <p class="footloctext">
-                                            daralsafwa@alhosnigroup.com
+                                    </dd>
+                                    <dd>
+                                        <p class="abouttext ">
+                                            <a href="../search-properties/" class="text-light">
+        
+                                            Search Properties
+                                            </a>
                                         </p>
-                                    </div>
+                                    </dd>
+                                    <dd>
+                                        <p class="abouttext ">
+                                          <a href="../contact-us/" class="text-light">
+        
+                                            Contact Us
+                                            </a>
+                                        </p>
+                                    </dd>
                                 </dl>
                             </div>
+                            <div class="col-lg-5 col-md-5 col-sm-12 col-12">
+                                <div class="footgettouch">
+                                    <dl>
+                                        <dt>
+                                            <p class="footgettouchtext">Get In Touch</p>
+                                        </dt>
+                                        <div class="flexsec1">
+                                            <div class="iconbg">
+                                                <i class="fa-solid fa-location-dot"></i>
+                                            </div>
+                                            <p class="footloctext footloc-text">
+                                                Post Box 371, Postal Code 114
+                                                Muthrah - Sultanate of Oman
+                                            </p>
+                                        </div>
+                                        <div class="flexsec1">
+                                            <div class="iconbg">
+                                                <i class="fa-solid fa-phone"></i>
+                                            </div>
+                                            <p class="footloctext numbersec">
+                                                Mob: +968 99356393,
+        
+                                                <span class="number1">+968 99358724</span>,
+        
+                                                <span class="number2">+968 92021180</span>,
+                                                <span class="number3">+968 92430369</span>
+                                                <br>
+                                                Tel: +968 24791680 ext 109, <br> Fax +968 24791685
+                                            </p>
+                                        </div>
+                                        <div class="flexsec1">
+                                            <div class="iconbg">
+                                                <i class="fa-solid fa-envelope"></i>
+                                            </div>
+                                            <p class="footloctext">
+                                                daralsafwa@alhosnigroup.com
+                                            </p>
+                                        </div>
+                                    </dl>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <hr>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                            <p class="copytext">
-                                شركة دار الصفوة للاستثمار العقاري والخدمات @ 2025 – جميع الحقوق محفوظة
-
-                            </p>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-12 col-12 ">
-                            <div class="footfinaltext">
-                                <p class="copytext privtext text-light"><a href="../Privacy-Policy/" target="_blank"
-                                        class="text-light">
-                                        سياسة الخصوصية
+                    <hr>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                <p class="copytext">
+                                     @2025 Dar Al Safwa Real Estate & Investment Services LLC - All Rights Reserved
+                                </p>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-12 ">
+                                <div class="footfinaltext">
+                                    <p class="copytext privtext text-light"><a href="../Privacy-Policy/" target="_blank" class="text-light">
+                                        Privacy Policy
                                     </a></p>
-                                <p class="copytext privtext text-light"><a href="../Terms-and-Conditions/"
-                                        target="_blank" class="text-light">
-                                        الشروط والأحكام
+                                    <p class="copytext privtext text-light"><a href="../Terms-and-Conditions/" target="_blank" class="text-light">
+                                        Terms & Conditions
                                     </a></p>
-
-
+                                    <!--<p class="copytext legal">Legal Info</p>-->
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </footer>
-    </div>
+            </footer>
+        </div>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
 
 
-        document.addEventListener("scroll", function () {
-            const header = document.getElementById("header");
-            if (window.scrollY > 50) {
-                header.classList.add("scrolled");
-            } else {
-                header.classList.remove("scrolled");
-            }
+            document.addEventListener("scroll", function () {
+                const header = document.getElementById("header");
+                if (window.scrollY > 50) {
+                    header.classList.add("scrolled");
+                } else {
+                    header.classList.remove("scrolled");
+                }
+            });
+
+
+        </script>
+
+<script>
+    function showButtonContent(index) {
+        document.querySelectorAll(".buttons .btn").forEach((btn, i) => {
+            btn.classList.toggle("active", i === index);
         });
 
+        document.querySelectorAll(".dropdown").forEach((dropdown, i) => {
+            dropdown.style.display = i === index ? "block" : "none";
+        });
 
-    </script>
+        document.querySelectorAll(".content").forEach(content => content.classList.remove("active"));
 
-    <script>
-        function showButtonContent(index) {
-            document.querySelectorAll(".buttons .btn").forEach((btn, i) => {
-                btn.classList.toggle("active", i === index);
-            });
+        document.getElementById(`main-${index}`).classList.add("active");
 
-            document.querySelectorAll(".dropdown").forEach((dropdown, i) => {
-                dropdown.style.display = i === index ? "block" : "none";
-            });
+        // Reset dropdown selection
+        document.querySelectorAll("select").forEach(select => select.selectedIndex = 0);
+    }
 
-            document.querySelectorAll(".content").forEach(content => content.classList.remove("active"));
+    function showLocationContent(buttonIndex, locationId) {
+        document.querySelectorAll(".content").forEach(content => content.classList.remove("active"));
 
-            document.getElementById(`main-${index}`).classList.add("active");
-
-            // Reset dropdown selection
-            document.querySelectorAll("select").forEach(select => select.selectedIndex = 0);
+        if (locationId) {
+            document.getElementById(locationId).classList.add("active");
+        } else {
+            document.getElementById(`main-${buttonIndex}`).classList.add("active");
         }
+    }
 
-        function showLocationContent(buttonIndex, locationId) {
-            document.querySelectorAll(".content").forEach(content => content.classList.remove("active"));
-
-            if (locationId) {
-                document.getElementById(locationId).classList.add("active");
-            } else {
-                document.getElementById(`main-${buttonIndex}`).classList.add("active");
-            }
-        }
-
-        window.onload = () => {
-            showButtonContent(0);
-        };
-    </script>
+    window.onload = () => {
+        showButtonContent(0);
+    };
+</script>
 
 
-    <script>
-        const popup = document.getElementById("popup");
+<script>
+   const popup = document.getElementById("popup");
         const slider = document.querySelector(".slider");
         const dotsContainer = document.querySelector(".dots");
         const closeBtn = document.querySelector(".close-btn");
@@ -2791,7 +2385,7 @@
         let slides = [];
 
         document.querySelectorAll(".popup-trigger").forEach(img => {
-            img.addEventListener("click", function () {
+            img.addEventListener("click", function() {
                 slides = JSON.parse(this.getAttribute("data-images"));
                 slider.innerHTML = slides.map(s => `<img src="${s}" class="slide">`).join("");
                 dotsContainer.innerHTML = slides.map((_, index) => `<span class="dot" data-index="${index}"></span>`).join("");
@@ -2831,7 +2425,7 @@
         }
 
 
-        function showContent(index) {
+    function showContent(index) {
             // Hide all content
             let contents = document.querySelectorAll('.contents');
             contents.forEach(content => content.style.display = 'none');
@@ -2844,76 +2438,76 @@
             selectedContent.scrollIntoView({ behavior: 'smooth' });
         }
 
-        function closes1() {
-
+        function closes1(){
+            
             document.querySelector(".contents").style.cssText = "display:none;";
-            document.querySelector("#content2").style.cssText = "display:none;";
-            document.querySelector("#content3").style.cssText = "display:none;";
-            document.querySelector("#content4").style.cssText = "display:none;";
-            document.querySelector("#content5").style.cssText = "display:none;";
-            document.querySelector("#content6").style.cssText = "display:none;";
-            document.querySelector("#content7").style.cssText = "display:none;";
-            document.querySelector("#content8").style.cssText = "display:none;";
-            document.querySelector("#content9").style.cssText = "display:none;";
-            document.querySelector("#content10").style.cssText = "display:none;";
-            document.querySelector("#content11").style.cssText = "display:none;";
-            document.querySelector("#content12").style.cssText = "display:none;";
-            document.querySelector("#content13").style.cssText = "display:none;";
-            document.querySelector("#content14").style.cssText = "display:none;";
+                  document.querySelector("#content2").style.cssText = "display:none;";
+                        document.querySelector("#content3").style.cssText = "display:none;";
+                        document.querySelector("#content4").style.cssText = "display:none;";
+                        document.querySelector("#content5").style.cssText = "display:none;";
+                        document.querySelector("#content6").style.cssText = "display:none;";
+                        document.querySelector("#content7").style.cssText = "display:none;";
+                        document.querySelector("#content8").style.cssText = "display:none;";
+                        document.querySelector("#content9").style.cssText = "display:none;";
+                        document.querySelector("#content10").style.cssText = "display:none;";
+                        document.querySelector("#content11").style.cssText = "display:none;";
+                        document.querySelector("#content12").style.cssText = "display:none;";
+                        document.querySelector("#content13").style.cssText = "display:none;";
+                        document.querySelector("#content14").style.cssText = "display:none;";
         }
-    </script>
+</script>
 
 
-    <!-- JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/intro.js/minified/intro.min.js"></script>
+<!-- JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/intro.js/minified/intro.min.js"></script>
+        
+        
+        <script>
 
+// function startTour() {
+//     introJs().start();
+//   }
+   
+   
+//    introJs().setOptions({
+//   nextLabel: 'Next ',
+//   prevLabel: ' Back',
+//   skipLabel: 'Skip',
+//   doneLabel: 'Got it!',
+//   steps: [
+//     {
+//       intro: 'Welcome to Dar Al Safwa Real Estate & Investment Services LLC '
+//     },
+//     {
+//       element: document.querySelector('#menu1'),
+//       intro: 'Apartments section '
+//     },
+//     {
+//       element: document.querySelector('#menu2'),
+//       intro: 'Villas section'
+//     },
+//     {
+//       element: document.querySelector('#menu3'),
+//       intro: 'Shops section'
+//     },
+//     {
+//       element: document.querySelector('#menu4'),
+//       intro: 'You can select the location and find the properties'
+//     }
+//   ]
+// }).start();
 
-    <script>
+window.addEventListener('DOMContentLoaded', () => {
+      const popup1 = document.getElementById('popupTag');
+      popup1.style.display = 'block'; // Show popup on load
 
-        // function startTour() {
-        //     introJs().start();
-        //   }
+      // Optional: Hide after 5 seconds
+      setTimeout(() => {
+        popup1.style.display = 'none';
+      }, 5000);
+    });
 
-
-        //    introJs().setOptions({
-        //   nextLabel: 'Next ',
-        //   prevLabel: ' Back',
-        //   skipLabel: 'Skip',
-        //   doneLabel: 'Got it!',
-        //   steps: [
-        //     {
-        //       intro: 'Welcome to Dar Al Safwa Real Estate & Investment Services LLC '
-        //     },
-        //     {
-        //       element: document.querySelector('#menu1'),
-        //       intro: 'Apartments section '
-        //     },
-        //     {
-        //       element: document.querySelector('#menu2'),
-        //       intro: 'Villas section'
-        //     },
-        //     {
-        //       element: document.querySelector('#menu3'),
-        //       intro: 'Shops section'
-        //     },
-        //     {
-        //       element: document.querySelector('#menu4'),
-        //       intro: 'You can select the location and find the properties'
-        //     }
-        //   ]
-        // }).start();
-
-        window.addEventListener('DOMContentLoaded', () => {
-            const popup1 = document.getElementById('popupTag');
-            popup1.style.display = 'block'; // Show popup on load
-
-            // Optional: Hide after 5 seconds
-            setTimeout(() => {
-                popup1.style.display = 'none';
-            }, 5000);
-        });
-
-    </script>
+</script>
 </body>
 
 </html>

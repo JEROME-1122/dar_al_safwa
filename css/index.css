@@ -353,8 +353,8 @@ padding-right: 5px !important;
 
 .boxflex .flexsec {
     border: 1px solid #000;
-    padding: 5px 5px 5px 5px;
-    margin: 20px 10px 10px 0px;
+    padding: 5px 2px 5px 7px;
+    margin: 20px 30px 10px 0px;
 }
 
 .boxflex {
@@ -400,24 +400,24 @@ padding-right: 5px !important;
 }
 
 .firstsec {
-    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
     border-bottom: 0px !important;
 }
 
 .sndosec {
-    border-top-left-radius: 20px;
-    border-right: 0px !important;
+    border-top-right-radius: 20px;
+    border-left: 0px !important;
     border-bottom: 0px !important;
 }
 
 .thirsec {
-    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
 
 }
 
 .fousec {
-    border-bottom-left-radius: 20px;
-    border-right: 0px !important;
+    border-bottom-right-radius: 20px;
+    border-left: 0px !important;
 }
 
 
@@ -425,7 +425,7 @@ padding-right: 5px !important;
 .containers>div {
 
     border: 1px solid black;
-    padding: 50px 60px 30px 0px;
+    padding: 50px 0px 30px 60px;
 
 }
 
@@ -450,7 +450,7 @@ padding-right: 5px !important;
 }
 
 .containers p {
-    max-width: 80%;
+    max-width: 60%;
 }
 
 
@@ -468,7 +468,7 @@ padding-right: 5px !important;
 }
 
 .vis {
-    margin-right: -7%;
+    margin-left: -7%;
     max-width: 107%;
 }
 
@@ -520,7 +520,7 @@ padding-right: 5px !important;
     .containers>div {
 
         border: 1px solid black;
-        padding: 50px 30px 30px 0px;
+        padding: 50px 0px 30px 30px;
 
     }
 
@@ -542,7 +542,7 @@ margin-top: 18px;
     .containers>div {
 
         border: 1px solid black;
-           padding: 50px 30px 30px 0px;
+        padding: 50px 0px 30px 30px;
 
     }
 
@@ -576,7 +576,7 @@ margin-top: 18px;
 
     .containers>div {
 
-        padding: 30px 30px 20px 0px;
+        padding: 30px 0px 20px 30px;
 
     }
 
@@ -649,7 +649,7 @@ margin-top: 18px;
 
     .containers>div {
 
-        padding: 30px 30px 20px 0px;
+        padding: 30px 0px 20px 30px;
 
     }
 
@@ -761,7 +761,7 @@ margin-top: 18px;
     .containers>div {
 
         border: 1px solid black;
-        padding: 50px 30px 30px 0px;
+        padding: 50px 0px 30px 60px;
 
     }
 
@@ -787,10 +787,6 @@ margin-top: 18px;
 
     .containers p {
         max-width: 100%;
-    }
-   .vis {
-        margin-right: 0%;
-        margin-bottom: 50px !important;
     }
 
 
@@ -830,7 +826,7 @@ margin-top: 18px;
     }
 
     .vis {
-        margin-right: 0%;
+        margin-left: 0%;
         max-width: 100%;
         margin-bottom: 0px !important;
     }
