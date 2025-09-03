@@ -1,0 +1,583 @@
+<?php
+$status = isset($_GET['status']) ? $_GET['status'] : '';
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dar Al Safwa - About Us</title>
+    <link rel="icon" href="../imgs/favicon.png" sizes="32x32">
+    <link rel="icon" href="../imgs/favicon.png" sizes="192x192">
+    <link rel="apple-touch-icon" href="../imgs/favicon.png">
+    <meta name="msapplication-TileImage" content="../imgs/favicon.png">
+    <link rel="canonical" href="">
+    <meta property="og:description" name="description"
+        content="Dar Al Safwa Real Estate Services LLC is one of the  Large & Prominent Group in Oman and Established in the year 1975 with a diversified line of Industries,  Infrastructure development and investment portfolios.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="../css/headerfooter.css" rel="stylesheet" type="text/css">
+    <link href="../css/index.css" rel="stylesheet" type="text/css">
+    <link href="../css/contact.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" id="astra-google-fonts-css"
+        href="https://fonts.googleapis.com/css?family=Poppins%3A400%2C%2C500&#038;display=fallback&#038;ver=4.3.1"
+        media="all">
+    <link rel="stylesheet" id="google-fonts-1-css"
+        href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CPoppins%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=auto&#038;ver=6.4.1"
+        media="all">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+        .message-success {
+            color: green;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .message-error {
+            color: red;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+          .error {
+        color: red;
+        font-size: 14px;
+    }
+    #resultMessage {
+        margin-top: 15px;
+        font-weight: bold;
+        color: green;
+    }
+    </style>
+</head>
+
+<body>
+
+    <div class="floatingesec">
+        <div class="floatcont">
+         <a href="tel:++6899358724">
+             <button class="btn-floating phone">
+                 <i class="fa-solid fa-phone"></i>
+               <span>+96899358724</span>
+             </button>
+           </a>
+           
+           <a  href="https://api.whatsapp.com/send?phone=+96899356393&text=Welcome to Dar Al Safwa Real Estate & Investment Services LLC   
+           How can we assist you" target="_blank">
+             <button class="btn-floating whatsapp">
+                 <i class="fa-brands fa-whatsapp"></i>
+               <span>+96899356393</span>
+             </button>
+           </a>
+           
+           <a href="mailto:daralsafwa@alhosnigroup.com" target="_blank">
+             <button class="btn-floating whatsapp1">
+                 <i class="fa-solid fa-envelope"></i>
+               <span> daralsafwa@alhosnigroup.com</span>
+             </button>
+           </a>
+        </div>
+     </div>
+
+
+    <header id="header" class="fixed-top">
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container ">
+                <a class="navbar-brand" href="../">
+                    <img src="../imgs/logo.png" class="logoimg w-100" alt="Dar Al Safwa" title="Dar Al Safwa" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="navbar-nav me-auto mb-2 mb-lg-0"></div>
+                    <ul class="navbar-nav navsec mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../about-us/">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link active" aria-current="page" href="../search-properties/">Search Properties</a>
+                        </li>
+                         <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../contact-us/">Contact Us</a>
+                            </li>
+                    </ul>
+                    <!--<form class="d-flex">-->
+
+                    <!--     <a href="../contact-us/">-->
+                    <!--             <button class="btn contbtn">Contact Us</button>-->
+                    <!--        </a>-->
+                    <!--</form>-->
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="maincont">
+        <div class="bannersec">
+            <img src="../imgs/contactbg.webp" class="bannerimg w-100" alt=" Dar Al Safwa" title="Dar Al Safwa" />
+
+            <div class="abouheadsec">
+
+                <h1 class="abouthead bannertext">
+                    Get in touch
+                </h1>
+
+
+            </div>
+        </div>
+
+        <div class="container ">
+            <div class="mainsec">
+
+
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-12 mb-5" data-aos="zoom-in" data-aos-delay="50" data-aos-offset="0"
+                    data-aos-duration="1000" data-aos-easing="linear" data-aos-once="false">
+
+                        <button class="aboutsubhead mb-2 subhead mb-4 abbtn" data-aos="zoom-in" data-aos-delay="50" data-aos-offset="0"
+                        data-aos-duration="1000" data-aos-easing="linear" data-aos-once="false">Connect with us</button>
+
+                        <h2 class="abouthead mainhead abhead mb-3" data-aos="zoom-in" data-aos-delay="50" data-aos-offset="0"
+                        data-aos-duration="1000" data-aos-easing="linear" data-aos-once="false">
+                            <strong>
+                                Your real estate
+                                journey starts here
+                            </strong>
+                        </h2>
+
+                        <p data-aos="zoom-in" data-aos-delay="50" data-aos-offset="0"
+                        data-aos-duration="1000" data-aos-easing="linear" data-aos-once="false">
+                            Have real estate questions? We're here to help
+                            with expert guidance and seamless solutions!
+                        </p>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-12 mb-5" data-aos="zoom-in" data-aos-delay="50" data-aos-offset="0"
+                    data-aos-duration="1000" data-aos-easing="linear" data-aos-once="false">
+
+                        <div class="d-flex">
+                            <img src="../imgs/cont-cal.png" class="contcall" alt="" title="" data-aos="zoom-in" data-aos-delay="50" data-aos-offset="0"
+                            data-aos-duration="1000" data-aos-easing="linear" data-aos-once="false"/>
+                            <div class="conttextsec">
+                                <p class="conttext1"data-aos="zoom-in" data-aos-delay="50" data-aos-offset="0"
+                                data-aos-duration="1000" data-aos-easing="linear" data-aos-once="false" >
+                                    <strong>
+                                        Call us
+                                    </strong>
+                                </p>
+
+                                <p class="contnumsec" data-aos="zoom-in" data-aos-delay="50" data-aos-offset="0"
+                                data-aos-duration="1000" data-aos-easing="linear" data-aos-once="false">
+                                    Mob: +968 99356393, +968 99358724, +968 92021180, +968 92430369
+                                    <br>
+                                    Tel: +968 24791680 ext 109,
+                                    <br>
+                                    Fax +968 24791685
+                                </p>
+                            </div>
+
+                        </div>
+                        <hr>
+                        <div class="d-flex flexsec-1" data-aos="zoom-in" data-aos-delay="50" data-aos-offset="0"
+                        data-aos-duration="1000" data-aos-easing="linear" data-aos-once="false">
+                            <div class="d-flex">
+                                <img src="../imgs/cont-loc.png" class="contcall" alt="" title="" data-aos="zoom-in" data-aos-delay="50" data-aos-offset="0"
+                                data-aos-duration="1000" data-aos-easing="linear" data-aos-once="false" />
+                                <div class="conttextsec">
+                                    <p class="conttext1" data-aos="zoom-in" data-aos-delay="50" data-aos-offset="0"
+                                    data-aos-duration="1000" data-aos-easing="linear" data-aos-once="false">
+                                        <strong>
+                                            Visit our office
+                                        </strong>
+                                    </p>
+                                    <p data-aos="zoom-in" data-aos-delay="50" data-aos-offset="0"
+                                    data-aos-duration="1000" data-aos-easing="linear" data-aos-once="false">
+                                        Post Box 371, Postal Code 114
+                                        Muttrah - Sultanate of Oman
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="d-flex" >
+                                <img src="../imgs/cont-mail.png" class="contcall" alt="" title=""  data-aos="zoom-in" data-aos-delay="50" data-aos-offset="0"
+                                data-aos-duration="1000" data-aos-easing="linear" data-aos-once="false"/>
+                                <div class="conttextsec">
+                                    <p class="conttext1" data-aos="zoom-in" data-aos-delay="50" data-aos-offset="0"
+                                    data-aos-duration="1000" data-aos-easing="linear" data-aos-once="false">
+                                        <strong>
+                                            Email us
+                                        </strong>
+                                    </p>
+
+                                    <p data-aos="zoom-in" data-aos-delay="50" data-aos-offset="0"
+                                    data-aos-duration="1000" data-aos-easing="linear" data-aos-once="false">
+                                        daralsafwa@alhosnigroup.com
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="mapsec mb-5" data-aos="fade-up" data-aos-delay="50" data-aos-offset="0"
+        data-aos-duration="1000" data-aos-easing="linear" data-aos-once="false">
+            
+            
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.145328128885!2d58.54874137617591!3d23.5991203945657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e91f9d709058865%3A0x65d41e62634a915a!2sAl%20Hosni%20Group%20International!5e0!3m2!1sen!2sin!4v1742288784619!5m2!1sen!2sin"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+          
+
+            <div class="container" data-aos="fade-up" data-aos-delay="50" data-aos-offset="0"
+            data-aos-duration="1000" data-aos-easing="linear" data-aos-once="false"> 
+                <div class="formsec">
+                    <h2 class="abouthead mainhead abhead mb-3">
+                        <strong>
+                            Have some doubts? Let's talk
+                        </strong>
+                    </h2>
+
+                    <form method="post" action="send_form.php">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-12 ">
+                                <div class="form__group">
+                                    <input type="text" class="form__input " id="name" name="name" placeholder="Name">
+
+                                    <img src="../imgs/cont-name.png" class="f-call" alt="" title="" />
+                                    <label class="form__label" name="name">Name</label>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-12 ">
+                                <div class="form__group">
+                                    <input type="email" class="form__input " id="email" name="Email_address"
+                                        placeholder="Email address">
+                                    <img src="../imgs/cont-email.png" class="f-call" alt="" title="" />
+                                    <label class="form__label" name="Email address">Email address</label>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-12 ">
+                                <div class="form__group">
+                                    <input type="text" class="form__input " id="phno" name="Phone_number"
+                                        placeholder="Phone Number">
+                                    <img src="../imgs/cont-call.png" class="f-call" alt="" title="" />
+                                    <label class="form__label" name="Phone Number">Phone number</label>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-12 ">
+                                <div class="form__group">
+                                    <input type="text" class="form__input " id="subj" name="Subject" placeholder="Subject">
+
+                                    <label class="form__label" name="Subject">Subject</label>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-12 ">
+                                <div class="form__group">
+                                    <textarea type="text" class="form__input form__input1"  id="txtmessage" name="message"
+                                        placeholder="Subject"></textarea>
+                                    <img src="../imgs/cont-msg.png" class="f-call" alt="" title="" />
+                                    <label class="form__label" name="Subject">Message</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="btn btnsec" type="submit">Submit message</button>
+                    </form>
+                    <div id="resultMessage"></div>
+                    <?php if ($status === 'success'): ?>
+                        <div class="message-success">Mail Sent.</div>
+                    <?php elseif ($status === 'error'): ?>
+                        <div class="message-error">There was a problem sending your message. Please try again.</div>
+                    <?php endif; ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- <div class="detaisec">
+            <div class="row">
+                <div class="col-lg-7 col-md-6 col-sm-12 col-12 mb-5 colsec">
+
+
+                    <div class="textsec">
+                        <h2 class="mainhead">
+                            <b>
+                                Find your ideal rental property with
+                                Dar Al Safwa Real Estate Services LLC
+                            </b>
+                        </h2>
+
+                        <p>
+                            Our Services links you with the best rental properties in desirable
+                            locations, whether you're looking for a shop, a pleasant apartment,
+                            or a family-friendly villa. We make it easy for you to find a rental
+                            that fits your needs and budget by providing a smooth browsing
+                            experience, verified listings, and competitive pricing.
+                        </p>
+
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-6 col-sm-12 col-12 mb-5">
+                    <img src="../imgs/abimg4.jpg" class="w-100 " alt="" title="" />
+                </div>
+                <div class="col-lg-5 col-md-6 col-sm-12 col-12 mb-5">
+                    <img src="../imgs/abimg5.jpg" class="w-100 " alt="" title="" />
+
+                </div>
+                <div class="col-lg-7 col-md-6 col-sm-12 col-12 mb-5 colsec">
+                    <div class="textsec">
+                        <h2 class="mainhead">
+                            <b>
+                                Ensuring a safe, seamless,
+                                and transparent rental experience
+                            </b>
+                        </h2>
+                        <p>
+
+                            We prioritizes <strong>
+                                security, transparency, and convenience
+                            </strong>, ensuring
+                            all property listings are <b>verified</b>, lease agreements are secure,
+                            and customer support is available to assist with any inquiries.
+                            <strong>Dar Al Safwa Real Estate Services LLC</strong>Whether users are looking for
+                            a
+                            new
+                            home or a business space
+                            provides a reliable and
+                            efficient rental experience.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-6 col-sm-12 col-12 mb-5 colsec">
+                    <div class="textsec">
+                        <h2 class="mainhead">
+                            <b>
+                                Extensive selection of
+                                residential & commercial rentals
+                            </b>
+
+                        </h2>
+                        <p>
+                            We offers a diverse selection of rental properties, including
+                            apartments, villas, warehouses, and retail shops which are available
+                            in the locations Wadi Kabir, Ruwi, Hamriya, Wadi Adi, Qurum,
+                            Madinat Qaboos, Madinat Al Alam, Baushar, Al Goubrah, Azaiba,
+                            Mabella, Al Khaboura, Al Khoud, Ibra, Nizwa and Ibri etc.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-6 col-sm-12 col-12 mb-5">
+                    <img src="../imgs/abimg6.jpg" class="w-100 " alt="" title="" />
+                </div>
+            </div>
+        </div> -->
+
+    </div>
+
+    </div>
+    </div>
+
+
+    <div class="container">
+        <div class="foot_topsec bootomsec">
+            <div class="row">
+                <div class="col-lg-8 col-md-7 col-sm-12 col-12 boxsec-2">
+                            <h2 class="text-light mainhead">
+                                <strong>
+                                    From commercial to  residential your property journey starts  here
+                                </strong>
+                            </h2>
+                            <p class="text-light">
+                                <b>
+                                    Experience Unparalleled elegance, modern design, and timeless comfort in a space that redefines luxury living.
+                                </b>
+                            </p>
+                        </div>
+                <div class="col-lg-4 col-md-5 col-sm-12 col-12 boxsec-1">
+                    <div class="boxbgsec">
+<a href="../search-properties/">
+<button class="btn exbtn text-light">Explore Properties</button>
+</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <footer>
+        <div class="footersec">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-md-4 col-sm-12">
+                        <img src="../imgs/footlogo.png" class=" logoimg w-100 mb-4" alt="" title="" />
+                        <p class="mb-0">
+                            We provide top-tier residential and commercial
+                            rentals throughout Oman, setting the standard
+                            with our client focused service and unwavering
+                            commitment to excellence.
+                        </p>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-12 col-12">
+                        <dl class="useful-link">
+                            <dt>
+                                <p class="footgettouchtext">Useful Links</p>
+                            </dt>
+                            <dd>
+                                <p class="abouttext ">
+
+                                  <a href="../" class="text-light">
+                                    Home
+                                  </a>
+                                </p>
+                            </dd>
+                            <dd>
+                                <p class="abouttext ">
+                                    <a href="../about-us/" class="text-light">
+
+                                    About Us
+                                    </a>
+                                </p>
+                            </dd>
+                            <dd>
+                                <p class="abouttext ">
+                                    <a href="../search-properties/" class="text-light">
+
+                                    Search Properties
+                                    </a>
+                                </p>
+                            </dd>
+                            <dd>
+                                <p class="abouttext ">
+                                  <a href="../contact-us/" class="text-light">
+
+                                    Contact Us
+                                    </a>
+                                </p>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="col-lg-5 col-md-5 col-sm-12 col-12">
+                        <div class="footgettouch">
+                            <dl>
+                                <dt>
+                                    <p class="footgettouchtext">Get In Touch</p>
+                                </dt>
+                                <div class="flexsec1">
+                                    <div class="iconbg">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                    </div>
+                                    <p class="footloctext footloc-text">
+                                        Post Box 371, Postal Code 114
+                                        Muthrah - Sultanate of Oman
+                                    </p>
+                                </div>
+                                <div class="flexsec1">
+                                    <div class="iconbg">
+                                        <i class="fa-solid fa-phone"></i>
+                                    </div>
+                                    <p class="footloctext numbersec">
+                                        Mob: +968 99356393,
+
+                                        <span class="number1">+968 99358724</span>,
+
+                                        <span class="number2">+968 92021180</span>,
+                                        <span class="number3">+968 92430369</span>
+                                        <br>
+                                        Tel: +968 24791680 ext 109, <br> Fax +968 24791685
+                                    </p>
+                                </div>
+                                <div class="flexsec1">
+                                    <div class="iconbg">
+                                        <i class="fa-solid fa-envelope"></i>
+                                    </div>
+                                    <p class="footloctext">
+                                        daralsafwa@alhosnigroup.com
+                                    </p>
+                                </div>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <p class="copytext">
+                             @2025 Dar Al Safwa Real Estate & Investment Services LLC - All Rights Reserved
+                        </p>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12 ">
+                        <div class="footfinaltext">
+                            <p class="copytext privtext text-light"><a href="../Privacy-Policy/" target="_blank" class="text-light">
+                                Privacy Policy
+                            </a></p>
+                            <p class="copytext privtext text-light"><a href="../Terms-and-Conditions/" target="_blank" class="text-light">
+                                Terms & Conditions
+                            </a></p>
+                            <!--<p class="copytext legal">Legal Info</p>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+
+
+        document.addEventListener("scroll", function () {
+            const header = document.getElementById("header");
+            if (window.scrollY > 50) {
+                header.classList.add("scrolled");
+            } else {
+                header.classList.remove("scrolled");
+            }
+        });
+
+
+
+        function showContent(index) {
+            let contents = document.querySelectorAll('.content');
+            let buttons = document.querySelectorAll('.tab-btn');
+
+            contents.forEach((content, i) => {
+                content.classList.toggle('active', i === index);
+            });
+
+            buttons.forEach((btn, i) => {
+                btn.classList.toggle('active', i === index);
+            });
+        }
+
+
+
+    </script>
+
+
+</body>
+
+</html>
