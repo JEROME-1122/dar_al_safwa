@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -35,29 +35,29 @@
 
     <div class="floatingesec">
         <div class="floatcont">
-            <a href="tel:++6899358724">
-                <button class="btn-floating phone">
-                    <i class="fa-solid fa-phone"></i>
-                    <span>+96899358724</span>
-                </button>
-            </a>
-
-            <a href="https://api.whatsapp.com/send?phone=+96899356393&text=Welcome to Dar Al Safwa Real Estate & Investment Services LLC   
+         <a href="tel:++6899358724">
+             <button class="btn-floating phone">
+                 <i class="fa-solid fa-phone"></i>
+               <span>+96899358724</span>
+             </button>
+           </a>
+           
+           <a  href="https://api.whatsapp.com/send?phone=+96899356393&text=Welcome to Dar Al Safwa Real Estate & Investment Services LLC   
            How can we assist you" target="_blank">
-                <button class="btn-floating whatsapp">
-                    <i class="fa-brands fa-whatsapp"></i>
-                    <span>+96899356393</span>
-                </button>
-            </a>
-
-            <a href="mailto:daralsafwa@alhosnigroup.com" target="_blank">
-                <button class="btn-floating whatsapp1">
-                    <i class="fa-solid fa-envelope"></i>
-                    <span> daralsafwa@alhosnigroup.com</span>
-                </button>
-            </a>
+             <button class="btn-floating whatsapp">
+                 <i class="fa-brands fa-whatsapp"></i>
+               <span>+96899356393</span>
+             </button>
+           </a>
+           
+           <a href="mailto:daralsafwa@alhosnigroup.com" target="_blank">
+             <button class="btn-floating whatsapp1">
+                 <i class="fa-solid fa-envelope"></i>
+               <span> daralsafwa@alhosnigroup.com</span>
+             </button>
+           </a>
         </div>
-    </div>
+     </div>
 
 
     <header id="header" class="fixed-top">
@@ -71,34 +71,26 @@
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <div class="navbar-nav me-auto mb-2 mb-lg-0"></div>
                     <ul class="navbar-nav navsec mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../">
-                                الصفحة الرئيسية
-                            </a>
+                            <a class="nav-link active" aria-current="page" href="../">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../about-us/">
-                                من نحن
-                            </a>
+                            <a class="nav-link active" aria-current="page" href="../about-us/">About Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../search-properties/">
-                                إبحث عن وحدتك العقارية
-                            </a>
+                           <a class="nav-link active" aria-current="page" href="../search-properties/">Search Properties</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../contact-us/">
-
-                                التواصل معنا
-                            </a>
-                        </li>
+                         <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../contact-us/">Contact Us</a>
+                            </li>
                     </ul>
                     <!--<form class="d-flex">-->
+
                     <!--     <a href="../contact-us/">-->
-                    <!--             <button class="btn contbtn"></button>-->
+                    <!--             <button class="btn contbtn">Contact Us</button>-->
                     <!--        </a>-->
                     <!--</form>-->
                 </div>
@@ -113,7 +105,7 @@
             <div class="abouheadsec">
 
                 <h1 class="abouthead bannertext">
-                    تواصل معنا
+                    Get in touch
                 </h1>
 
 
@@ -125,44 +117,42 @@
 
 
                 <div class="row">
-                    <div class="col-lg-6 col-md-12 col-sm-12 col-12 mb-5" data-aos="zoom-in" data-aos-delay="50"
-                        data-aos-offset="0" data-aos-duration="1000" data-aos-easing="linear" data-aos-once="false">
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-12 mb-5" data-aos="zoom-in" data-aos-delay="50" data-aos-offset="0"
+                    data-aos-duration="1000" data-aos-easing="linear" data-aos-once="false">
 
-                        <button class="aboutsubhead mb-2 subhead mb-4 abbtn" data-aos="zoom-in" data-aos-delay="50"
-                            data-aos-offset="0" data-aos-duration="1000" data-aos-easing="linear" data-aos-once="false">
-                            تواصل معنا
-                        </button>
+                        <button class="aboutsubhead mb-2 subhead mb-4 abbtn" data-aos="zoom-in" data-aos-delay="50" data-aos-offset="0"
+                        data-aos-duration="1000" data-aos-easing="linear" data-aos-once="false">Connect with us</button>
 
-                        <h2 class="abouthead mainhead abhead mb-3" data-aos="zoom-in" data-aos-delay="50"
-                            data-aos-offset="0" data-aos-duration="1000" data-aos-easing="linear" data-aos-once="false">
+                        <h2 class="abouthead mainhead abhead mb-3" data-aos="zoom-in" data-aos-delay="50" data-aos-offset="0"
+                        data-aos-duration="1000" data-aos-easing="linear" data-aos-once="false">
                             <strong>
-                                رحلتك في البحث عن العقار المثالي تبدأ معنا
+                                Your real estate
+                                journey starts here
                             </strong>
                         </h2>
 
-                        <p data-aos="zoom-in" data-aos-delay="50" data-aos-offset="0" data-aos-duration="1000"
-                            data-aos-easing="linear" data-aos-once="false">
-
-                            هل لديك استفسارات عقارية؟ نحن هنا لمساعدتك بخبرة موثوقة وحلول سهلة تلبي تطلعاتك!
+                        <p data-aos="zoom-in" data-aos-delay="50" data-aos-offset="0"
+                        data-aos-duration="1000" data-aos-easing="linear" data-aos-once="false">
+                            Have real estate questions? We're here to help
+                            with expert guidance and seamless solutions!
                         </p>
                     </div>
-                    <div class="col-lg-6 col-md-12 col-sm-12 col-12 mb-5" data-aos="zoom-in" data-aos-delay="50"
-                        data-aos-offset="0" data-aos-duration="1000" data-aos-easing="linear" data-aos-once="false">
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-12 mb-5" data-aos="zoom-in" data-aos-delay="50" data-aos-offset="0"
+                    data-aos-duration="1000" data-aos-easing="linear" data-aos-once="false">
 
                         <div class="d-flex">
-                            <img src="../imgs/cont-cal.png" class="contcall" alt="" title="" data-aos="zoom-in"
-                                data-aos-delay="50" data-aos-offset="0" data-aos-duration="1000"
-                                data-aos-easing="linear" data-aos-once="false" />
+                            <img src="../imgs/cont-cal.png" class="contcall" alt="" title="" data-aos="zoom-in" data-aos-delay="50" data-aos-offset="0"
+                            data-aos-duration="1000" data-aos-easing="linear" data-aos-once="false"/>
                             <div class="conttextsec">
-                                <p class="conttext1 " data-aos="zoom-in" data-aos-delay="50" data-aos-offset="0"
-                                    data-aos-duration="1000" data-aos-easing="linear" data-aos-once="false">
+                                <p class="conttext1"data-aos="zoom-in" data-aos-delay="50" data-aos-offset="0"
+                                data-aos-duration="1000" data-aos-easing="linear" data-aos-once="false" >
                                     <strong>
-                                        اتصل بنا
+                                        Call us
                                     </strong>
                                 </p>
 
                                 <p class="contnumsec" data-aos="zoom-in" data-aos-delay="50" data-aos-offset="0"
-                                    data-aos-duration="1000" data-aos-easing="linear" data-aos-once="false">
+                                data-aos-duration="1000" data-aos-easing="linear" data-aos-once="false">
                                     Mob: +968 99356393, +968 99358724, +968 92021180, +968 92430369
                                     <br>
                                     Tel: +968 24791680 ext 109,
@@ -174,41 +164,37 @@
                         </div>
                         <hr>
                         <div class="d-flex flexsec-1" data-aos="zoom-in" data-aos-delay="50" data-aos-offset="0"
-                            data-aos-duration="1000" data-aos-easing="linear" data-aos-once="false">
+                        data-aos-duration="1000" data-aos-easing="linear" data-aos-once="false">
                             <div class="d-flex">
-                                <img src="../imgs/cont-loc.png" class="contcall" alt="" title="" data-aos="zoom-in"
-                                    data-aos-delay="50" data-aos-offset="0" data-aos-duration="1000"
-                                    data-aos-easing="linear" data-aos-once="false" />
+                                <img src="../imgs/cont-loc.png" class="contcall" alt="" title="" data-aos="zoom-in" data-aos-delay="50" data-aos-offset="0"
+                                data-aos-duration="1000" data-aos-easing="linear" data-aos-once="false" />
                                 <div class="conttextsec">
                                     <p class="conttext1" data-aos="zoom-in" data-aos-delay="50" data-aos-offset="0"
-                                        data-aos-duration="1000" data-aos-easing="linear" data-aos-once="false">
+                                    data-aos-duration="1000" data-aos-easing="linear" data-aos-once="false">
                                         <strong>
-                                            قم بزيارة مكتبنا
+                                            Visit our office
                                         </strong>
                                     </p>
                                     <p data-aos="zoom-in" data-aos-delay="50" data-aos-offset="0"
-                                        data-aos-duration="1000" data-aos-easing="linear" data-aos-once="false">
-
-
-                                        صندوق بريد 371، الرمز البريدي 114، مطرح، سلطنة عُمان
-
+                                    data-aos-duration="1000" data-aos-easing="linear" data-aos-once="false">
+                                        Post Box 371, Postal Code 114
+                                        Muttrah - Sultanate of Oman
                                     </p>
                                 </div>
                             </div>
-                            <div class="d-flex">
-                                <img src="../imgs/cont-mail.png" class="contcall" alt="" title="" data-aos="zoom-in"
-                                    data-aos-delay="50" data-aos-offset="0" data-aos-duration="1000"
-                                    data-aos-easing="linear" data-aos-once="false" />
+                            <div class="d-flex" >
+                                <img src="../imgs/cont-mail.png" class="contcall" alt="" title=""  data-aos="zoom-in" data-aos-delay="50" data-aos-offset="0"
+                                data-aos-duration="1000" data-aos-easing="linear" data-aos-once="false"/>
                                 <div class="conttextsec">
                                     <p class="conttext1" data-aos="zoom-in" data-aos-delay="50" data-aos-offset="0"
-                                        data-aos-duration="1000" data-aos-easing="linear" data-aos-once="false">
+                                    data-aos-duration="1000" data-aos-easing="linear" data-aos-once="false">
                                         <strong>
-                                            البريد الإلكتروني
+                                            Email us
                                         </strong>
                                     </p>
 
                                     <p data-aos="zoom-in" data-aos-delay="50" data-aos-offset="0"
-                                        data-aos-duration="1000" data-aos-easing="linear" data-aos-once="false">
+                                    data-aos-duration="1000" data-aos-easing="linear" data-aos-once="false">
                                         daralsafwa@alhosnigroup.com
                                     </p>
                                 </div>
@@ -221,23 +207,21 @@
             </div>
         </div>
 
-        <div class="mapsec mb-5" data-aos="fade-up" data-aos-delay="50" data-aos-offset="0" data-aos-duration="1000"
-            data-aos-easing="linear" data-aos-once="false">
-
-
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.145328128885!2d58.54874137617591!3d23.5991203945657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e91f9d709058865%3A0x65d41e62634a915a!2sAl%20Hosni%20Group%20International!5e0!3m2!1sen!2sin!4v1742288784619!5m2!1sen!2sin"
-                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+        <div class="mapsec mb-5" data-aos="fade-up" data-aos-delay="50" data-aos-offset="0"
+        data-aos-duration="1000" data-aos-easing="linear" data-aos-once="false">
+            
+            
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.145328128885!2d58.54874137617591!3d23.5991203945657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e91f9d709058865%3A0x65d41e62634a915a!2sAl%20Hosni%20Group%20International!5e0!3m2!1sen!2sin!4v1742288784619!5m2!1sen!2sin"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
+          
 
-
-            <div class="container" data-aos="fade-up" data-aos-delay="50" data-aos-offset="0" data-aos-duration="1000"
-                data-aos-easing="linear" data-aos-once="false">
+            <div class="container" data-aos="fade-up" data-aos-delay="50" data-aos-offset="0"
+            data-aos-duration="1000" data-aos-easing="linear" data-aos-once="false"> 
                 <div class="formsec">
                     <h2 class="abouthead mainhead abhead mb-3">
                         <strong>
-
-                            هل لديك أي استفسارات؟ تواصل معنا وسنكون سعداء بخدمتك
+                            Have some doubts? Let's talk
                         </strong>
                     </h2>
 
@@ -248,9 +232,7 @@
                                     <input type="text" class="form__input " id="name" name="name" placeholder="Name">
 
                                     <img src="../imgs/cont-name.png" class="f-call" alt="" title="" />
-                                    <label class="form__label" name="name">
-                                        الاسم
-                                    </label>
+                                    <label class="form__label" name="name">Name</label>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-12 col-12 ">
@@ -258,9 +240,7 @@
                                     <input type="email" class="form__input " id="email" name="Email_address"
                                         placeholder="Email address">
                                     <img src="../imgs/cont-email.png" class="f-call" alt="" title="" />
-                                    <label class="form__label" name="Email address">
-                                        البريد الالكتروني
-                                    </label>
+                                    <label class="form__label" name="Email address">Email address</label>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-12 col-12 ">
@@ -268,36 +248,27 @@
                                     <input type="text" class="form__input " id="phno" name="Phone_number"
                                         placeholder="Phone Number">
                                     <img src="../imgs/cont-call.png" class="f-call" alt="" title="" />
-                                    <label class="form__label" name="Phone Number">
-                                        رقم الهاتف
-                                    </label>
+                                    <label class="form__label" name="Phone Number">Phone number</label>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-12 col-12 ">
                                 <div class="form__group">
-                                    <input type="text" class="form__input " id="subj" name="Subject"
-                                        placeholder="Subject">
+                                    <input type="text" class="form__input " id="subj" name="Subject" placeholder="Subject">
 
-                                    <label class="form__label" name="Subject">
-                                        الموضوع
-                                    </label>
+                                    <label class="form__label" name="Subject">Subject</label>
                                 </div>
                             </div>
                             <div class="col-lg-12 col-md-12 col-sm-12 col-12 ">
                                 <div class="form__group">
-                                    <textarea type="text" class="form__input form__input1" id="txtmessage"
-                                        name="message" placeholder="Subject"></textarea>
+                                    <textarea type="text" class="form__input form__input1"  id="txtmessage" name="message"
+                                        placeholder="Subject"></textarea>
                                     <img src="../imgs/cont-msg.png" class="f-call" alt="" title="" />
-                                    <label class="form__label" name="Subject">
-                                        الرسالة
-                                    </label>
+                                    <label class="form__label" name="Subject">Message</label>
                                 </div>
                             </div>
                         </div>
 
-                        <button class="btn btnsec" type="submit">
-                            تقديم الرسالة
-                        </button>
+                        <button class="btn btnsec" type="submit">Submit message</button>
                     </form>
 
                 </div>
@@ -393,30 +364,22 @@
         <div class="foot_topsec bootomsec">
             <div class="row">
                 <div class="col-lg-8 col-md-7 col-sm-12 col-12 boxsec-2">
-                    <h2 class="text-light mainhead">
-                        <strong>
-
-                            رحلتك العقارية تبدأ معنا
-
-                        </strong>
-                    </h2>
-                    <p class="text-light">
-                        <b>
-
-                            لدينا للإيجار ( محلات تجارية - مباني سكنية - فلل السكنية )
-                            الخبرة فى الأناقة مع روح التصميم العصري، وراحة تدوم، في مساحات مصممة لتمنحك تجربة
-                            سكنية فاخرة بمعايير حديثة.
-                        </b>
-                    </p>
-                </div>
+                            <h2 class="text-light mainhead">
+                                <strong>
+                                    From commercial to  residential your property journey starts  here
+                                </strong>
+                            </h2>
+                            <p class="text-light">
+                                <b>
+                                    Experience Unparalleled elegance, modern design, and timeless comfort in a space that redefines luxury living.
+                                </b>
+                            </p>
+                        </div>
                 <div class="col-lg-4 col-md-5 col-sm-12 col-12 boxsec-1">
                     <div class="boxbgsec">
-                        <a href="search-properties/">
-                            <button class="btn exbtn text-light">
-                                اكتشف خياراتك العقارية
-
-                            </button>
-                        </a>
+<a href="../search-properties/">
+<button class="btn exbtn text-light">Explore Properties</button>
+</a>
                     </div>
                 </div>
             </div>
@@ -433,45 +396,46 @@
                     <div class="col-lg-5 col-md-4 col-sm-12">
                         <img src="../imgs/footlogo.png" class=" logoimg w-100 mb-4" alt="" title="" />
                         <p class="mb-0">
-                            نقدّم عقارات سكنية وتجارية للإيجار في مختلف أنحاء سلطنة عمان، مع التزام راسخ
-                            بالتميّز وخدمة ترتكز على احتياجات العميل، مما يجعلنا الخيار المفضل لمن يبحث عن
-                            الجودة والراحة والمصداقية.
+                            We provide top-tier residential and commercial
+                            rentals throughout Oman, setting the standard
+                            with our client focused service and unwavering
+                            commitment to excellence.
                         </p>
                     </div>
                     <div class="col-lg-2 col-md-3 col-sm-12 col-12">
                         <dl class="useful-link">
                             <dt>
-                                <p class="footgettouchtext">
-                                    روابط مفيدة
-                                </p>
+                                <p class="footgettouchtext">Useful Links</p>
                             </dt>
                             <dd>
                                 <p class="abouttext ">
 
-                                    <a href="../" class="text-light">
-                                        الصفحة الرئيسية
-                                    </a>
+                                  <a href="../" class="text-light">
+                                    Home
+                                  </a>
                                 </p>
                             </dd>
                             <dd>
                                 <p class="abouttext ">
                                     <a href="../about-us/" class="text-light">
-                                        من نحن
-                                    </a>
-                                </p>
-                            </dd>
-                            <dd>
-                                <p class="abouttext ">
 
-                                    <a href="../search-properties/" class="text-light">
-                                        إبحث عن وحدتك العقارية
+                                    About Us
                                     </a>
                                 </p>
                             </dd>
                             <dd>
                                 <p class="abouttext ">
-                                    <a href="../contact-us/" class="text-light">
-                                        عن دار الصفوة
+                                    <a href="../search-properties/" class="text-light">
+
+                                    Search Properties
+                                    </a>
+                                </p>
+                            </dd>
+                            <dd>
+                                <p class="abouttext ">
+                                  <a href="../contact-us/" class="text-light">
+
+                                    Contact Us
                                     </a>
                                 </p>
                             </dd>
@@ -481,17 +445,15 @@
                         <div class="footgettouch">
                             <dl>
                                 <dt>
-                                    <p class="footgettouchtext">
-                                        للتواصل
-
-                                    </p>
+                                    <p class="footgettouchtext">Get In Touch</p>
                                 </dt>
                                 <div class="flexsec1">
                                     <div class="iconbg">
                                         <i class="fa-solid fa-location-dot"></i>
                                     </div>
                                     <p class="footloctext footloc-text">
-                                        صندوق بريد 371، الرمز البريدي 114، مطرح، سلطنة عُمان
+                                        Post Box 371, Postal Code 114
+                                        Muthrah - Sultanate of Oman
                                     </p>
                                 </div>
                                 <div class="flexsec1">
@@ -527,22 +489,18 @@
                 <div class="row">
                     <div class="col-lg-6 col-md-6 col-sm-12 col-12">
                         <p class="copytext">
-                            شركة دار الصفوة للاستثمار العقاري والخدمات @ 2025 – جميع الحقوق محفوظة
-
+                             @2025 Dar Al Safwa Real Estate & Investment Services LLC - All Rights Reserved
                         </p>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-12 col-12 ">
                         <div class="footfinaltext">
-                            <p class="copytext privtext text-light"><a href="../Privacy-Policy/" target="_blank"
-                                    class="text-light">
-                                    سياسة الخصوصية
-                                </a></p>
-                            <p class="copytext privtext text-light"><a href="../Terms-and-Conditions/" target="_blank"
-                                    class="text-light">
-                                    الشروط والأحكام
-                                </a></p>
-
-
+                            <p class="copytext privtext text-light"><a href="../Privacy-Policy/" target="_blank" class="text-light">
+                                Privacy Policy
+                            </a></p>
+                            <p class="copytext privtext text-light"><a href="../Terms-and-Conditions/" target="_blank" class="text-light">
+                                Terms & Conditions
+                            </a></p>
+                            <!--<p class="copytext legal">Legal Info</p>-->
                         </div>
                     </div>
                 </div>

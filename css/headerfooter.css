@@ -16,7 +16,7 @@ header {
 }
 
 .bannersec-1,.abouheadsec{
-    background-color:rgba(0, 0, 0, 0.5)  ;
+    
     width: 100%;
     height: 100%;
     align-items: center;
@@ -27,7 +27,13 @@ header {
 
  .abouheadsec
  {
-    background-color:rgba(0, 0, 0, 0.7)  ;
+    background-color:rgba(0, 0, 0, 0.6)  ;
+ }
+ .bannersec-1{
+     background-color:rgba(0, 0, 0, 0.6)   !important;
+ }
+ .bannersec-1 .abouheadsec{
+     background-color:transparent;
  }
  .bannersec-1 h1,.abouheadsec h1{
 margin-top: 100px;
@@ -70,7 +76,12 @@ color: #B53C3A !important;
 .boxsec-2 p{
     max-width: 55%;
     z-index: +99;
+  
     
+}
+
+.boxsec-2{
+  padding-right: 40px
 }
 
 .exbtn,.exbtn:hover{
@@ -101,7 +112,7 @@ width: 155% ;
 height: 290px;
 background-size: contain;
 margin-top: -10px;
-margin-left: -250px !important ;
+margin-right: -250px !important ;
 align-items: center;
 justify-content: center;
 display: flex;
@@ -121,7 +132,7 @@ transform: scale(1.08);
 transition: 1s;
 }
 
- @media screen (width:993px) {
+ @media screen and (width:993px) {
     .foot_topsec{
     z-index: 9999;
     }
@@ -179,10 +190,10 @@ transition: 1s;
     }
 
     .boxbgsec{
-        margin-left: -150px !important;
-        margin-top: -10px;
-        border-top-right-radius: 30px;
-        border-bottom-right-radius: 30px;
+        margin-right: -120px !important;
+        margin-top: -8px;
+        border-top-left-radius: 100px;
+        border-bottom-left-radius: 100px;
     }
 }
 
@@ -212,8 +223,8 @@ transition: 1s;
     #B53C3A 70%,       /* outer */
     #B53C3A 100%
   );
-  margin-top: 30px
-  
+  margin-top: 30px;
+  margin-right: 0 !important ;
     }
 
     .exbtn,.exbtn:hover{
@@ -246,12 +257,12 @@ transition: 1s;
 
 @media screen and (min-width:1100px) and (max-width:1199px) {
     .navsec{
-        margin-left: 150px;
+        margin-right: 150px;
     }
 }
 @media screen and (min-width:993px) and (max-width:1099px) {
     .navsec{
-        margin-left: 100px;
+        margin-right: 200px;
     }
 }
 
@@ -365,8 +376,8 @@ dt {
 }
 
 .footfinaltext {
-    align-items: right;
-    justify-content: right;
+    align-items: start;
+    justify-content: left;
     display: flex;
 }
 
@@ -376,7 +387,7 @@ dt {
 
 .flexsec1 {
     align-items: start;
-    justify-content: left;
+    justify-content: right;
     display: flex;
 }
 
@@ -408,6 +419,9 @@ button {
     max-width: 80%;
 }
 
+.footloctext{
+    margin-right: 10px;
+}
 
 .flexsec1 {
     margin-bottom: 10px;
@@ -416,6 +430,7 @@ button {
 /* Base */
 .btn-floating:hover i {
     margin-bottom: -3px;
+    margin-left: 10px;
     color:#fff
   }
 
@@ -425,7 +440,7 @@ button {
   
   .btn-floating {
       position: fixed;
-      right: 25px;
+      left: 25px;
       overflow: hidden;
       width: 40px;
       height: 40px;
@@ -443,6 +458,9 @@ button {
       cursor: pointer;
   }
   
+  .fa-whatsapp{
+    font-size: 19px;
+  }
   .btn-floating span {
       font-size: 16px;
       margin-left: 5px;
@@ -509,12 +527,12 @@ button {
 .floatingesec{
     position: fixed;
   
-  transform: translateY(-50%);
+  transform: translateX(-50%);
   z-index: 999999;
-  left: auto;
-  right: 0;
+  left: 0;
+  right: auto;
   align-items: center;
-  justify-content: end;
+  justify-content: start;
   display: flex;
   top: 60% !important;
   /* bottom: 40%;
@@ -576,15 +594,21 @@ button {
     .bannersec {
         margin-top: 78px;
     }
+    .bannersec-1 h1, .abouheadsec h1{
+        margin-top: 0px !important;
+    }
 }
 
 
 @media screen and (max-width:767px) {
 
+    .bannersec-1 h1, .abouheadsec h1{
+        margin-top: 0px !important;
+    }
 
     .footersec {
         background-color: #000;
-        padding: 80px 0px 0px 0px;
+        padding: 50px 0px 0px 0px;
     }
 
     .useful-link {

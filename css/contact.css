@@ -86,7 +86,7 @@
 .contcall {
     max-width: 30px;
     max-height: 30px;
-    margin-right: 10px;
+    margin-left: 10px;
 }
 
 .conttext1 {
@@ -118,7 +118,7 @@
     padding: 50px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 30px;
-    margin-top: -200px;
+    margin-top: -250px;
     z-index: 999;
     background-color: #fff;
 }
@@ -150,7 +150,7 @@
 .form__label {
     position: absolute;
     top: 9px;
-    left: 15px;
+    right: 15px;
     transition: all 300ms ease-in-out;
     pointer-events: none;
 }
@@ -160,7 +160,7 @@
     color: #B53C3A;
     font-weight: 900;
     top: -22px;
-    left: 0;
+    right: 0;
     font-size: 14px;
     z-index: 1;
 }
@@ -186,7 +186,7 @@
 
 .f-call {
     position: absolute;
-    right: 10px;
+    left: 10px;
     top: 13px;
     max-width: 20px;
 }
@@ -294,6 +294,7 @@
 
         width: 90%;
     }
+    
 }
 
 
@@ -325,6 +326,7 @@
     .formsec {
 
         width: 90%;
+        padding: 30px;
     }
 
     .form__input1 {
@@ -334,7 +336,7 @@
 
     .f-call {
         position: absolute;
-        right: 10px;
+        left: 10px;
         top: 15px;
         max-width: 15px;
     }
